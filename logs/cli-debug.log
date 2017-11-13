@@ -1,0 +1,20 @@
+2017-10-15 21:07:04 Notice: Notice (8): Undefined variable: alias in [/Users/mohammedelkady/public_html/ships/tmp/bake/index-ctp.php, line 47]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+include - ROOT/tmp/bake/index-ctp.php, line 47
+Bake\View\BakeView::_evaluate() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 204
+Cake\View\View::_render() - CORE/src/View/View.php, line 1157
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 140
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 88
+Bake\Shell\Task\TemplateTask::getContent() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 441
+Bake\Shell\Task\TemplateTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 399
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 148
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 508
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 501
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 230
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+

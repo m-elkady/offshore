@@ -1,0 +1,1502 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-07-17 13:31+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/AdsController.php:55;81
+msgid "The ad has been saved."
+msgstr ""
+
+#: Controller/Admin/AdsController.php:58;84
+msgid "The ad could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/AdsController.php:104
+msgid "The ad has been deleted."
+msgstr ""
+
+#: Controller/Admin/AdsController.php:106
+msgid "The ad could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/ArticlesController.php:55;85
+msgid "The article has been saved."
+msgstr ""
+
+#: Controller/Admin/ArticlesController.php:58;88
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/ArticlesController.php:113
+msgid "The article has been deleted."
+msgstr ""
+
+#: Controller/Admin/ArticlesController.php:115
+msgid "The article could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:56;88
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:59;91
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:115
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:117
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/FaqsController.php:52;76
+msgid "The faq has been saved."
+msgstr ""
+
+#: Controller/Admin/FaqsController.php:55;79
+msgid "The faq could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/FaqsController.php:98
+msgid "The faq has been deleted."
+msgstr ""
+
+#: Controller/Admin/FaqsController.php:100
+msgid "The faq could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/GroupsController.php:55;81
+msgid "The group has been saved."
+msgstr ""
+
+#: Controller/Admin/GroupsController.php:58;84
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/GroupsController.php:105
+msgid "The group has been deleted."
+msgstr ""
+
+#: Controller/Admin/GroupsController.php:107
+msgid "The group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/ImagesController.php:51;74
+msgid "The image has been saved."
+msgstr ""
+
+#: Controller/Admin/ImagesController.php:54;77
+msgid "The image could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/ImagesController.php:96
+msgid "The image has been deleted."
+msgstr ""
+
+#: Controller/Admin/ImagesController.php:98
+msgid "The image could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/NewsController.php:56;87
+msgid "The news has been saved."
+msgstr ""
+
+#: Controller/Admin/NewsController.php:59;90
+msgid "The news could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/NewsController.php:113
+msgid "The news has been deleted."
+msgstr ""
+
+#: Controller/Admin/NewsController.php:115
+msgid "The news could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:52;85
+msgid "The page has been saved."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:55;88
+msgid "The page could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:114
+msgid "The page has been deleted."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:116
+msgid "The page could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:55;81
+msgid "The permission has been saved."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:58;84
+msgid "The permission could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:105
+msgid "The permission has been deleted."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:107
+msgid "The permission could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PollQuestionsController.php:63;94
+msgid "The poll question has been saved."
+msgstr ""
+
+#: Controller/Admin/PollQuestionsController.php:66;97
+msgid "The poll question could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PollQuestionsController.php:123
+msgid "The poll question has been deleted."
+msgstr ""
+
+#: Controller/Admin/PollQuestionsController.php:125
+msgid "The poll question could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PollsController.php:55;80
+msgid "The poll has been saved."
+msgstr ""
+
+#: Controller/Admin/PollsController.php:58;83
+msgid "The poll could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PollsController.php:103
+msgid "The poll has been deleted."
+msgstr ""
+
+#: Controller/Admin/PollsController.php:105
+msgid "The poll could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:52;76
+msgid "The setting has been saved."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:55;79
+msgid "The setting could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:97
+msgid "The setting has been deleted."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:99
+msgid "The setting could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:44
+msgid "Your username or password was incorrect."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:49
+msgid "Good Bye"
+msgstr ""
+
+#: Controller/Admin/UsersController.php:88;113
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:91;116
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:137
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:139
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/WritersController.php:52;76
+msgid "The writer has been saved."
+msgstr ""
+
+#: Controller/Admin/WritersController.php:55;79
+msgid "The writer could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/WritersController.php:98
+msgid "The writer has been deleted."
+msgstr ""
+
+#: Controller/Admin/WritersController.php:100
+msgid "The writer could not be deleted. Please, try again."
+msgstr ""
+
+#: Model/Behavior/ImageBehavior.php:207
+msgid "Please upload images only (gif, png, jpg)."
+msgstr ""
+
+#: Model/Table/AdsTable.php:70
+msgid "Header"
+msgstr ""
+
+#: Model/Table/AdsTable.php:70
+msgid "Banner left"
+msgstr ""
+
+#: Model/Table/AdsTable.php:70
+msgid "Banner right"
+msgstr ""
+
+#: Model/Table/AdsTable.php:70
+msgid "Banner Bottom"
+msgstr ""
+
+#: Model/Table/AdsTable.php:70
+msgid "Side Bar"
+msgstr ""
+
+#: Model/Table/CategoriesTable.php:79;80
+#: Model/Table/FaqsTable.php:53;56
+#: Model/Table/ImagesTable.php:72;75;84
+#: Model/Table/NewsTable.php:74;84;87
+#: Model/Table/PagesTable.php:69;70;71;72;73
+#: Model/Table/PollQuestionOptionsTable.php:58;61
+#: Model/Table/PollsTable.php:66;69
+#: Model/Table/UsersTable.php:42;44;46
+#: Template/Admin/Articles/add.ctp:77;80;83
+#: Template/Admin/Faqs/add.ctp:83;86;89;92
+#: Template/Admin/Images/add.ctp:77;80
+#: Template/Admin/News/add.ctp:144;147;150
+#: Template/Admin/Pages/add.ctp:97;100;103;106
+#: Template/Admin/PollQuestions/add.ctp:152;155;158;161
+#: Template/Admin/PollQuestions/view.ctp:46
+#: Template/Admin/Polls/add.ctp:76;79
+#: Template/Admin/Polls/view.ctp:81
+msgid "Required"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:41
+msgid "TextBox"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:42
+msgid "Radio Single Choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:43
+msgid "SelectBox Single Choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:44
+msgid "Multi choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:45
+msgid "Essay text"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:46
+msgid "Label"
+msgstr ""
+
+#: Template/Admin/Ads/add.ctp:9
+#: Template/Admin/Ads/edit.ctp:8
+#: Template/Element/side_menu.ctp:30
+msgid "Add Ad"
+msgstr ""
+
+#: Template/Admin/Ads/add.ctp:11
+#: Template/Admin/Ads/edit.ctp:10
+#: Template/Admin/Ads/view.ctp:4
+msgid "Edit Ad"
+msgstr ""
+
+#: Template/Admin/Ads/add.ctp:19
+msgid "Select Location"
+msgstr ""
+
+#: Template/Admin/Ads/add.ctp:30
+#: Template/Admin/Ads/edit.ctp:26
+#: Template/Admin/Articles/add.ctp:52
+#: Template/Admin/Articles/edit.ctp:41
+#: Template/Admin/Categories/add.ctp:47
+#: Template/Admin/Categories/edit.ctp:28
+#: Template/Admin/Faqs/add.ctp:45
+#: Template/Admin/Faqs/edit.ctp:24
+#: Template/Admin/Groups/add.ctp:23
+#: Template/Admin/Groups/edit.ctp:22
+#: Template/Admin/Images/add.ctp:52
+#: Template/Admin/Images/edit.ctp:29
+#: Template/Admin/News/add.ctp:119
+#: Template/Admin/News/edit.ctp:40
+#: Template/Admin/Pages/add.ctp:54
+#: Template/Admin/Pages/edit.ctp:27
+#: Template/Admin/Permissions/add.ctp:25
+#: Template/Admin/Permissions/edit.ctp:23
+#: Template/Admin/PollQuestions/add.ctp:114
+#: Template/Admin/PollQuestions/edit.ctp:25
+#: Template/Admin/Polls/add.ctp:44
+#: Template/Admin/Polls/edit.ctp:23
+#: Template/Admin/Settings/add.ctp:16
+#: Template/Admin/Settings/edit.ctp:15
+#: Template/Admin/Users/add.ctp:15
+#: Template/Admin/Users/edit.ctp:12
+#: Template/Admin/Writers/add.ctp:48
+#: Template/Admin/Writers/edit.ctp:24
+msgid "Submit"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:5
+msgid "Ads"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:22
+#: Template/Admin/Ads/view.ctp:3
+#: Template/Admin/Articles/index.ctp:17
+#: Template/Admin/Articles/view.ctp:3
+#: Template/Admin/Categories/index.ctp:23
+#: Template/Admin/Categories/view.ctp:3;83;133
+#: Template/Admin/Faqs/index.ctp:19
+#: Template/Admin/Faqs/view.ctp:3
+#: Template/Admin/Groups/index.ctp:17
+#: Template/Admin/Groups/view.ctp:3;45;73
+#: Template/Admin/Images/index.ctp:18
+#: Template/Admin/Images/view.ctp:3
+#: Template/Admin/News/index.ctp:18
+#: Template/Admin/News/view.ctp:3;121
+#: Template/Admin/Pages/index.ctp:17
+#: Template/Admin/Pages/view.ctp:3
+#: Template/Admin/Permissions/index.ctp:16
+#: Template/Admin/Permissions/view.ctp:3;37
+#: Template/Admin/PollQuestions/index.ctp:22
+#: Template/Admin/PollQuestions/view.ctp:3;60
+#: Template/Admin/Polls/index.ctp:17
+#: Template/Admin/Polls/view.ctp:3;52;84
+#: Template/Admin/Settings/index.ctp:16
+#: Template/Admin/Settings/view.ctp:3
+#: Template/Admin/Users/index.ctp:19
+#: Template/Admin/Users/view.ctp:3
+#: Template/Admin/Writers/index.ctp:19
+#: Template/Admin/Writers/view.ctp:3;69
+msgid "Actions"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:34
+#: Template/Admin/Ads/view.ctp:47
+#: Template/Admin/Articles/view.ctp:79;83;87
+#: Template/Admin/Categories/view.ctp:63
+#: Template/Admin/Faqs/view.ctp:31
+#: Template/Admin/Images/view.ctp:37
+#: Template/Admin/News/view.ctp:77;81;85
+#: Template/Admin/Pages/view.ctp:31
+#: Template/Admin/Permissions/view.ctp:25
+#: Template/Admin/PollQuestions/index.ctp:32
+#: Template/Admin/PollQuestions/view.ctp:47
+#: Template/Admin/Polls/view.ctp:39
+#: Template/Admin/Writers/view.ctp:37
+msgid "Yes"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:34
+#: Template/Admin/Ads/view.ctp:47
+#: Template/Admin/Articles/view.ctp:79;83;87
+#: Template/Admin/Categories/view.ctp:63
+#: Template/Admin/Faqs/view.ctp:31
+#: Template/Admin/Images/view.ctp:37
+#: Template/Admin/News/view.ctp:77;81;85
+#: Template/Admin/Pages/view.ctp:31
+#: Template/Admin/Permissions/view.ctp:25
+#: Template/Admin/PollQuestions/index.ctp:32
+#: Template/Admin/PollQuestions/view.ctp:47
+#: Template/Admin/Polls/view.ctp:39
+#: Template/Admin/Writers/view.ctp:37
+msgid "No"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:38
+#: Template/Admin/Articles/index.ctp:28
+#: Template/Admin/Categories/index.ctp:40
+#: Template/Admin/Categories/view.ctp:101;158
+#: Template/Admin/Faqs/index.ctp:32
+#: Template/Admin/Groups/index.ctp:28
+#: Template/Admin/Groups/view.ctp:57;82
+#: Template/Admin/Images/index.ctp:30
+#: Template/Admin/News/index.ctp:31
+#: Template/Admin/News/view.ctp:131
+#: Template/Admin/Pages/index.ctp:29
+#: Template/Admin/Permissions/index.ctp:26
+#: Template/Admin/Permissions/view.ctp:47
+#: Template/Admin/PollQuestions/index.ctp:35
+#: Template/Admin/PollQuestions/view.ctp:71
+#: Template/Admin/Polls/index.ctp:29
+#: Template/Admin/Polls/view.ctp:63;98
+#: Template/Admin/Settings/index.ctp:26
+#: Template/Admin/Users/index.ctp:33
+#: Template/Admin/Writers/index.ctp:31
+#: Template/Admin/Writers/view.ctp:99
+msgid "Edit"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:39
+#: Template/Admin/Articles/index.ctp:29
+#: Template/Admin/Categories/index.ctp:41
+#: Template/Admin/Categories/view.ctp:102;159
+#: Template/Admin/Faqs/index.ctp:33
+#: Template/Admin/Groups/index.ctp:29
+#: Template/Admin/Groups/view.ctp:58;83
+#: Template/Admin/Images/index.ctp:31
+#: Template/Admin/News/index.ctp:32
+#: Template/Admin/News/view.ctp:132
+#: Template/Admin/Pages/index.ctp:30
+#: Template/Admin/Permissions/index.ctp:27
+#: Template/Admin/Permissions/view.ctp:48
+#: Template/Admin/PollQuestions/index.ctp:36
+#: Template/Admin/PollQuestions/view.ctp:72
+#: Template/Admin/Polls/index.ctp:30
+#: Template/Admin/Polls/view.ctp:64;99
+#: Template/Admin/Settings/index.ctp:27
+#: Template/Admin/Users/index.ctp:34
+#: Template/Admin/Writers/index.ctp:32
+#: Template/Admin/Writers/view.ctp:100
+msgid "Delete"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:39
+#: Template/Admin/Ads/view.ctp:5
+#: Template/Admin/Articles/index.ctp:29
+#: Template/Admin/Articles/view.ctp:5
+#: Template/Admin/Categories/index.ctp:41
+#: Template/Admin/Categories/view.ctp:5;102;159
+#: Template/Admin/Faqs/index.ctp:33
+#: Template/Admin/Faqs/view.ctp:5
+#: Template/Admin/Groups/index.ctp:29
+#: Template/Admin/Groups/view.ctp:5;58;83
+#: Template/Admin/Images/index.ctp:31
+#: Template/Admin/Images/view.ctp:5
+#: Template/Admin/News/index.ctp:32
+#: Template/Admin/News/view.ctp:5;132
+#: Template/Admin/Pages/index.ctp:30
+#: Template/Admin/Pages/view.ctp:5
+#: Template/Admin/Permissions/index.ctp:27
+#: Template/Admin/Permissions/view.ctp:5;48
+#: Template/Admin/PollQuestions/index.ctp:36
+#: Template/Admin/PollQuestions/view.ctp:5;72
+#: Template/Admin/Polls/index.ctp:30
+#: Template/Admin/Polls/view.ctp:5;64;99
+#: Template/Admin/Settings/index.ctp:27
+#: Template/Admin/Settings/view.ctp:5
+#: Template/Admin/Users/index.ctp:34
+#: Template/Admin/Users/view.ctp:5
+#: Template/Admin/Writers/index.ctp:32
+#: Template/Admin/Writers/view.ctp:5;100
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:51
+#: Template/Admin/Articles/index.ctp:41
+#: Template/Admin/Categories/index.ctp:53
+#: Template/Admin/Faqs/index.ctp:45
+#: Template/Admin/Groups/index.ctp:41
+#: Template/Admin/Images/index.ctp:41
+#: Template/Admin/News/index.ctp:44
+#: Template/Admin/Pages/index.ctp:42
+#: Template/Admin/Permissions/index.ctp:39
+#: Template/Admin/PollQuestions/index.ctp:46
+#: Template/Admin/Polls/index.ctp:42
+#: Template/Admin/Settings/index.ctp:35
+#: Template/Admin/Users/index.ctp:44
+#: Template/Admin/Writers/index.ctp:44
+msgid "previous"
+msgstr ""
+
+#: Template/Admin/Ads/index.ctp:55
+#: Template/Admin/Articles/index.ctp:45
+#: Template/Admin/Categories/index.ctp:57
+#: Template/Admin/Faqs/index.ctp:49
+#: Template/Admin/Groups/index.ctp:45
+#: Template/Admin/Images/index.ctp:45
+#: Template/Admin/News/index.ctp:48
+#: Template/Admin/Pages/index.ctp:46
+#: Template/Admin/Permissions/index.ctp:43
+#: Template/Admin/PollQuestions/index.ctp:50
+#: Template/Admin/Polls/index.ctp:46
+#: Template/Admin/Settings/index.ctp:37
+#: Template/Admin/Users/index.ctp:46
+#: Template/Admin/Writers/index.ctp:48
+msgid "next"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:5
+msgid "Delete Ad"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:6
+#: Template/Element/side_menu.ctp:29
+msgid "List Ads"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:7
+msgid "New Ad"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:14
+#: Template/Admin/Articles/add.ctp:33
+#: Template/Admin/Categories/add.ctp:33
+#: Template/Admin/Groups/view.ctp:71
+#: Template/Admin/Images/add.ctp:33
+#: Template/Admin/Images/index.ctp:14
+#: Template/Admin/News/add.ctp:55
+#: Template/Admin/Pages/add.ctp:33
+#: Template/Admin/Permissions/view.ctp:16
+#: Template/Admin/PollQuestions/add.ctp:55
+#: Template/Admin/Polls/add.ctp:33
+#: Template/Admin/Polls/index.ctp:14
+#: Template/Admin/Writers/add.ctp:33
+msgid "Title"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:18
+msgid "Url"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:22
+#: Template/Admin/Images/view.ctp:24
+#: Template/Admin/News/view.ctp:118
+#: Template/Admin/Pages/view.ctp:22
+#: Template/Admin/Writers/view.ctp:24
+msgid "Image"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:26
+#: Template/Admin/Articles/view.ctp:50
+#: Template/Admin/Categories/view.ctp:38;71;114
+#: Template/Admin/Faqs/view.ctp:14
+#: Template/Admin/Groups/view.ctp:22;39;70
+#: Template/Admin/Images/view.ctp:28
+#: Template/Admin/News/view.ctp:60;117
+#: Template/Admin/Pages/view.ctp:26
+#: Template/Admin/Permissions/view.ctp:20;33
+#: Template/Admin/PollQuestions/view.ctp:30;55
+#: Template/Admin/Polls/view.ctp:26;47;76
+#: Template/Admin/Settings/view.ctp:18
+#: Template/Admin/Users/view.ctp:26
+#: Template/Admin/Writers/view.ctp:28;45
+msgid "Id"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:30
+msgid "Location"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:34
+#: Template/Admin/Categories/view.ctp:50;79
+#: Template/Admin/Faqs/view.ctp:18
+#: Template/Admin/PollQuestions/view.ctp:59
+msgid "Display Order"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:38
+#: Template/Admin/Articles/view.ctp:70
+#: Template/Admin/Categories/view.ctp:54;81;131
+#: Template/Admin/Faqs/view.ctp:22
+#: Template/Admin/Groups/view.ctp:26;43
+#: Template/Admin/Images/view.ctp:32
+#: Template/Admin/News/view.ctp:68;120
+#: Template/Admin/Permissions/view.ctp:35
+#: Template/Admin/PollQuestions/view.ctp:38
+#: Template/Admin/Polls/view.ctp:30;51;82
+#: Template/Admin/Users/view.ctp:30
+#: Template/Admin/Writers/view.ctp:32;67
+msgid "Created"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:42
+#: Template/Admin/Articles/view.ctp:74
+#: Template/Admin/Categories/view.ctp:132
+#: Template/Admin/Groups/view.ctp:30
+#: Template/Admin/News/view.ctp:72
+#: Template/Admin/Permissions/view.ctp:36
+#: Template/Admin/Polls/view.ctp:34
+#: Template/Admin/Writers/view.ctp:68
+msgid "Modified"
+msgstr ""
+
+#: Template/Admin/Ads/view.ctp:46
+#: Template/Admin/Articles/view.ctp:78
+#: Template/Admin/Categories/view.ctp:62;80;126
+#: Template/Admin/Faqs/view.ctp:30
+#: Template/Admin/Groups/view.ctp:72
+#: Template/Admin/Images/view.ctp:36
+#: Template/Admin/News/view.ctp:76
+#: Template/Admin/Permissions/view.ctp:24
+#: Template/Admin/Polls/view.ctp:38
+#: Template/Admin/Writers/view.ctp:36;58
+msgid "Active"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:9
+#: Template/Admin/Articles/edit.ctp:8
+#: Template/Element/side_menu.ctp:54
+msgid "Add Article"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:11
+#: Template/Admin/Articles/edit.ctp:10
+#: Template/Admin/Articles/view.ctp:4
+msgid "Edit Article"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:34
+#: Template/Admin/Images/add.ctp:34
+#: Template/Admin/News/add.ctp:56
+msgid "Description"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:35
+#: Template/Admin/News/add.ctp:57
+msgid "Meta Keywords"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:36
+#: Template/Admin/News/add.ctp:58
+msgid "Meta Description"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:37
+#: Template/Admin/Categories/view.ctp:125
+#: Template/Admin/Images/add.ctp:35
+#: Template/Admin/News/add.ctp:59
+#: Template/Admin/News/view.ctp:105
+msgid "Tags"
+msgstr ""
+
+#: Template/Admin/Articles/add.ctp:45
+msgid "Select Writer"
+msgstr ""
+
+#: Template/Admin/Articles/index.ctp:5
+msgid "Articles"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:5
+msgid "Delete Article"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:6
+#: Template/Admin/Writers/view.ctp:8
+#: Template/Element/side_menu.ctp:53
+msgid "List Articles"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:7
+#: Template/Admin/Writers/view.ctp:9
+msgid "New Article"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:8
+#: Template/Admin/Writers/view.ctp:6
+#: Template/Element/side_menu.ctp:47
+msgid "List Writers"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:9
+#: Template/Admin/Writers/view.ctp:7
+msgid "New Writer"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:10
+#: Template/Admin/Categories/view.ctp:6
+#: Template/Admin/News/view.ctp:8
+#: Template/Element/side_menu.ctp:17
+msgid "List Categories"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:11
+#: Template/Admin/Categories/view.ctp:7
+#: Template/Admin/News/view.ctp:9
+msgid "New Category"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:18
+#: Template/Admin/Categories/view.ctp:18;72;115
+#: Template/Admin/Images/view.ctp:16
+#: Template/Admin/News/view.ctp:20
+#: Template/Admin/Pages/view.ctp:14
+#: Template/Admin/PollQuestions/view.ctp:18;57
+#: Template/Admin/Polls/view.ctp:18;77
+#: Template/Admin/Writers/view.ctp:16;46
+msgid "Ar Title"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:22
+#: Template/Admin/Categories/view.ctp:22;73;116
+#: Template/Admin/News/view.ctp:24
+#: Template/Admin/Writers/view.ctp:47
+msgid "Ar Permalink"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:26
+#: Template/Admin/Categories/view.ctp:118
+#: Template/Admin/News/view.ctp:28
+#: Template/Admin/Writers/view.ctp:49
+msgid "Ar Keywords"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:30
+#: Template/Admin/Categories/view.ctp:26;74;120
+#: Template/Admin/Images/view.ctp:20
+#: Template/Admin/News/view.ctp:32
+#: Template/Admin/Pages/view.ctp:18
+#: Template/Admin/PollQuestions/view.ctp:22;58
+#: Template/Admin/Polls/view.ctp:22;78
+#: Template/Admin/Writers/view.ctp:20;51
+msgid "En Title"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:34
+#: Template/Admin/Categories/view.ctp:30;75;121
+#: Template/Admin/News/view.ctp:36
+#: Template/Admin/Writers/view.ctp:52
+msgid "En Permalink"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:38
+#: Template/Admin/Categories/view.ctp:123
+#: Template/Admin/News/view.ctp:40
+#: Template/Admin/Writers/view.ctp:54
+msgid "En Keywords"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:42
+msgid "Writer"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:46
+#: Template/Admin/News/view.ctp:44
+msgid "Category"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:54
+#: Template/Admin/Writers/view.ctp:61
+msgid "Editor Id"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:58
+#: Template/Admin/Categories/view.ctp:130
+#: Template/Admin/Writers/view.ctp:63
+msgid "Reviewer Id"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:62
+#: Template/Admin/Writers/view.ctp:64
+msgid "Publisher Id"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:66
+#: Template/Admin/News/view.ctp:64
+#: Template/Admin/Writers/view.ctp:66
+msgid "Publish Date"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:82
+#: Template/Admin/News/view.ctp:80
+#: Template/Admin/Writers/view.ctp:62
+msgid "Reviewed"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:86
+#: Template/Admin/News/view.ctp:84
+#: Template/Admin/Writers/view.ctp:65
+msgid "Published"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:91
+#: Template/Admin/Categories/view.ctp:117
+#: Template/Admin/Images/view.ctp:41
+#: Template/Admin/News/view.ctp:89
+#: Template/Admin/Writers/view.ctp:48
+msgid "Ar Description"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:95
+#: Template/Admin/Categories/view.ctp:119
+#: Template/Admin/News/view.ctp:93
+#: Template/Admin/Writers/view.ctp:50
+msgid "Ar Meta Description"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:99
+#: Template/Admin/Categories/view.ctp:122
+#: Template/Admin/Images/view.ctp:45
+#: Template/Admin/News/view.ctp:97
+#: Template/Admin/Writers/view.ctp:53
+msgid "En Description"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:103
+#: Template/Admin/Categories/view.ctp:124
+#: Template/Admin/News/view.ctp:101
+#: Template/Admin/Writers/view.ctp:55
+msgid "En Meta Description"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:107
+#: Template/Admin/Images/view.ctp:49
+#: Template/Admin/Writers/view.ctp:56
+msgid "Ar Tags"
+msgstr ""
+
+#: Template/Admin/Articles/view.ctp:111
+#: Template/Admin/Images/view.ctp:53
+#: Template/Admin/Writers/view.ctp:57
+msgid "En Tags"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:9
+#: Template/Admin/Categories/edit.ctp:9
+#: Template/Element/side_menu.ctp:18
+msgid "Add Category"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:11
+#: Template/Admin/Categories/edit.ctp:11
+#: Template/Admin/Categories/view.ctp:4
+msgid "Edit Category"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:42
+msgid "No Parent"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:5
+msgid "Categories"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:5
+msgid "Delete Category"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:8
+msgid "List Parent Categories"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:9
+msgid "New Parent Category"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:10
+#: Template/Admin/Images/view.ctp:8
+#: Template/Admin/News/view.ctp:6
+#: Template/Element/side_menu.ctp:23
+msgid "List News"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:11
+#: Template/Admin/Images/view.ctp:9
+#: Template/Admin/News/view.ctp:7
+msgid "New News"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:34
+msgid "Parent Category"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:42;77
+msgid "Lft"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:46;78
+msgid "Rght"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:58;82
+#: Template/Admin/Faqs/view.ctp:26
+#: Template/Admin/Groups/view.ctp:44
+#: Template/Admin/PollQuestions/view.ctp:42
+#: Template/Admin/Polls/view.ctp:83
+#: Template/Admin/Users/view.ctp:34
+msgid "Updated"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:67
+msgid "Related Categories"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:76
+msgid "Parent Id"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:100;157
+#: Template/Admin/Groups/view.ctp:56;81
+#: Template/Admin/News/view.ctp:130
+#: Template/Admin/Permissions/view.ctp:46
+#: Template/Admin/PollQuestions/view.ctp:70
+#: Template/Admin/Polls/view.ctp:62;97
+#: Template/Admin/Writers/view.ctp:98
+msgid "View"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:110;128
+#: Template/Admin/News/view.ctp:109
+msgid "Related News"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:127
+#: Template/Admin/Writers/view.ctp:60
+msgid "Category Id"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:129
+msgid "User Id"
+msgstr ""
+
+#: Template/Admin/Faqs/add.ctp:8
+#: Template/Admin/Faqs/edit.ctp:8
+msgid "Add Faq"
+msgstr ""
+
+#: Template/Admin/Faqs/add.ctp:10
+#: Template/Admin/Faqs/edit.ctp:10
+#: Template/Admin/Faqs/view.ctp:4
+msgid "Edit Faq"
+msgstr ""
+
+#: Template/Admin/Faqs/add.ctp:32
+#: Template/Admin/Faqs/view.ctp:35
+msgid "Question"
+msgstr ""
+
+#: Template/Admin/Faqs/add.ctp:33
+#: Template/Admin/Faqs/view.ctp:39
+#: Template/Admin/Polls/view.ctp:49
+msgid "Answer"
+msgstr ""
+
+#: Template/Admin/Faqs/index.ctp:5
+msgid "Faqs"
+msgstr ""
+
+#: Template/Admin/Faqs/view.ctp:5
+msgid "Delete Faq"
+msgstr ""
+
+#: Template/Admin/Faqs/view.ctp:6
+msgid "List Faqs"
+msgstr ""
+
+#: Template/Admin/Faqs/view.ctp:7
+msgid "New Faq"
+msgstr ""
+
+#: Template/Admin/Groups/add.ctp:9
+#: Template/Admin/Groups/edit.ctp:8
+msgid "Add Group"
+msgstr ""
+
+#: Template/Admin/Groups/add.ctp:11
+#: Template/Admin/Groups/edit.ctp:10
+#: Template/Admin/Groups/view.ctp:4
+msgid "Edit Group"
+msgstr ""
+
+#: Template/Admin/Groups/index.ctp:5
+msgid "Groups"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:5
+msgid "Delete Group"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:6
+#: Template/Admin/Permissions/view.ctp:8
+msgid "List Groups"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:7
+#: Template/Admin/Permissions/view.ctp:9
+msgid "New Group"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:8
+#: Template/Admin/Users/view.ctp:6
+#: Template/Element/side_menu.ctp:59
+msgid "List Users"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:9
+#: Template/Admin/Users/view.ctp:7
+msgid "New User"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:10
+#: Template/Admin/Permissions/view.ctp:6
+msgid "List Permissions"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:11
+#: Template/Admin/Permissions/view.ctp:7
+msgid "New Permission"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:18
+#: Template/Admin/Permissions/view.ctp:34
+msgid "Name"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:35
+msgid "Related Users"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:40
+#: Template/Admin/Users/login.ctp:68
+#: Template/Admin/Users/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:41
+#: Template/Admin/Users/login.ctp:75
+#: Template/Admin/Users/view.ctp:18
+msgid "Password"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:42
+msgid "Group Id"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:66
+msgid "Related Permissions"
+msgstr ""
+
+#: Template/Admin/Images/add.ctp:9
+#: Template/Admin/Images/edit.ctp:8
+#: Template/Admin/News/add.ctp:111
+msgid "Add Image"
+msgstr ""
+
+#: Template/Admin/Images/add.ctp:11
+#: Template/Admin/Images/edit.ctp:10
+#: Template/Admin/Images/view.ctp:4
+msgid "Edit Image"
+msgstr ""
+
+#: Template/Admin/Images/index.ctp:5
+msgid "Images"
+msgstr ""
+
+#: Template/Admin/Images/view.ctp:5
+msgid "Delete Image"
+msgstr ""
+
+#: Template/Admin/Images/view.ctp:6
+msgid "List Images"
+msgstr ""
+
+#: Template/Admin/Images/view.ctp:7
+msgid "New Image"
+msgstr ""
+
+#: Template/Admin/News/add.ctp:31
+#: Template/Admin/News/edit.ctp:8
+msgid "Add News"
+msgstr ""
+
+#: Template/Admin/News/add.ctp:33
+#: Template/Admin/News/edit.ctp:10
+#: Template/Admin/News/view.ctp:4
+msgid "Edit News"
+msgstr ""
+
+#: Template/Admin/News/add.ctp:67
+msgid "Select Category"
+msgstr ""
+
+#: Template/Admin/News/index.ctp:5
+msgid "News"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:5
+msgid "Delete News"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:10
+msgid "List Editors"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:11
+msgid "New Editor"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:12
+msgid "List News Images"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:13
+msgid "New News Image"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:48
+msgid "Editor"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:52
+msgid "Reviewer"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:56
+msgid "Publisher"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:113
+msgid "Related News Images"
+msgstr ""
+
+#: Template/Admin/News/view.ctp:119
+msgid "News Id"
+msgstr ""
+
+#: Template/Admin/Pages/add.ctp:7
+#: Template/Admin/Pages/edit.ctp:9
+#: Template/Element/side_menu.ctp:7
+msgid "Add Page"
+msgstr ""
+
+#: Template/Admin/Pages/add.ctp:9
+#: Template/Admin/Pages/edit.ctp:11
+#: Template/Admin/Pages/view.ctp:4
+msgid "Edit Page"
+msgstr ""
+
+#: Template/Admin/Pages/add.ctp:34
+msgid "Content"
+msgstr ""
+
+#: Template/Admin/Pages/add.ctp:45
+msgid "No parent"
+msgstr ""
+
+#: Template/Admin/Pages/index.ctp:5
+msgid "Pages"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:5
+msgid "Delete Page"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:6
+#: Template/Element/side_menu.ctp:6
+msgid "List Pages"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:7
+msgid "New Page"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:30
+msgid "Add To Mainmenu"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:35
+msgid "Ar Content"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:39
+msgid "En Content"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:9
+#: Template/Admin/Permissions/edit.ctp:8
+msgid "Add Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:11
+#: Template/Admin/Permissions/edit.ctp:10
+#: Template/Admin/Permissions/view.ctp:4
+msgid "Edit Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:20
+#: Template/Admin/Settings/view.ctp:14
+msgid "Key"
+msgstr ""
+
+#: Template/Admin/Permissions/index.ctp:5
+msgid "Permissions"
+msgstr ""
+
+#: Template/Admin/Permissions/view.ctp:5
+msgid "Delete Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/view.ctp:29
+msgid "Related Groups"
+msgstr ""
+
+#: Template/Admin/PollQuestions/add.ctp:31
+#: Template/Admin/PollQuestions/edit.ctp:8
+msgid "Add Poll Question"
+msgstr ""
+
+#: Template/Admin/PollQuestions/add.ctp:33
+#: Template/Admin/PollQuestions/edit.ctp:10
+#: Template/Admin/PollQuestions/view.ctp:4
+msgid "Edit Poll Question"
+msgstr ""
+
+#: Template/Admin/PollQuestions/add.ctp:82;99
+msgid "Arabic title"
+msgstr ""
+
+#: Template/Admin/PollQuestions/add.ctp:83;100
+msgid "English title"
+msgstr ""
+
+#: Template/Admin/PollQuestions/add.ctp:111
+msgid "Add Option"
+msgstr ""
+
+#: Template/Admin/PollQuestions/index.ctp:5
+msgid "Poll Questions"
+msgstr ""
+
+#: Template/Admin/PollQuestions/index.ctp:8
+msgid "Add poll"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:5
+msgid "Delete Poll Question"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:6
+#: Template/Admin/Polls/view.ctp:10
+msgid "List Poll Questions"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:7
+#: Template/Admin/Polls/view.ctp:11
+msgid "New Poll Question"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:8
+#: Template/Admin/Polls/view.ctp:6
+#: Template/Element/side_menu.ctp:41
+msgid "List Polls"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:9
+#: Template/Admin/Polls/view.ctp:7
+msgid "New Poll"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:10
+msgid "List Poll Question Options"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:11
+msgid "New Poll Question Option"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:26
+msgid "Poll"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:34
+#: Template/Admin/Polls/view.ctp:79
+msgid "Type"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:51
+msgid "Related Poll Question Options"
+msgstr ""
+
+#: Template/Admin/PollQuestions/view.ctp:56
+msgid "Poll Question Id"
+msgstr ""
+
+#: Template/Admin/Polls/add.ctp:9
+#: Template/Admin/Polls/edit.ctp:8
+#: Template/Element/side_menu.ctp:42
+msgid "Add Poll"
+msgstr ""
+
+#: Template/Admin/Polls/add.ctp:11
+#: Template/Admin/Polls/edit.ctp:10
+#: Template/Admin/Polls/view.ctp:4
+msgid "Edit Poll"
+msgstr ""
+
+#: Template/Admin/Polls/index.ctp:5
+msgid "Polls"
+msgstr ""
+
+#: Template/Admin/Polls/index.ctp:28
+msgid "Questions"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:5
+msgid "Delete Poll"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:8
+msgid "List Poll Answers"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:9
+msgid "New Poll Answer"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:43
+msgid "Related Poll Answers"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:48;80
+msgid "Poll Id"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:50
+msgid "Ip"
+msgstr ""
+
+#: Template/Admin/Polls/view.ctp:72
+msgid "Related Poll Questions"
+msgstr ""
+
+#: Template/Admin/Settings/add.ctp:6
+#: Template/Element/side_menu.ctp:66
+msgid "Add Setting"
+msgstr ""
+
+#: Template/Admin/Settings/edit.ctp:5
+#: Template/Admin/Settings/view.ctp:4
+msgid "Edit Setting"
+msgstr ""
+
+#: Template/Admin/Settings/index.ctp:5
+msgid "Settings"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:5
+msgid "Delete Setting"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:6
+#: Template/Element/side_menu.ctp:65
+msgid "List Settings"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:7
+msgid "New Setting"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:23
+msgid "Value"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:5
+msgid "Add User"
+msgstr ""
+
+#: Template/Admin/Users/edit.ctp:5
+#: Template/Admin/Users/view.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:5
+msgid "Users"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:16
+msgid "Group"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:22
+msgid "Role"
+msgstr ""
+
+#: Template/Admin/Writers/add.ctp:9
+#: Template/Admin/Writers/edit.ctp:8
+#: Template/Element/side_menu.ctp:48
+msgid "Add Writer"
+msgstr ""
+
+#: Template/Admin/Writers/add.ctp:11
+#: Template/Admin/Writers/edit.ctp:10
+#: Template/Admin/Writers/view.ctp:4
+msgid "Edit Writer"
+msgstr ""
+
+#: Template/Admin/Writers/index.ctp:5
+msgid "Writers"
+msgstr ""
+
+#: Template/Admin/Writers/view.ctp:5
+msgid "Delete Writer"
+msgstr ""
+
+#: Template/Admin/Writers/view.ctp:41
+msgid "Related Articles"
+msgstr ""
+
+#: Template/Admin/Writers/view.ctp:59
+msgid "Writer Id"
+msgstr ""
+
+#: Template/Element/image_between.ctp:3
+msgid "Preview"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:12
+msgid "List Contact Us messages"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:24
+msgid "Add News item"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:35
+msgid "List FAQ"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:36
+msgid "Add FAQ"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:60
+msgid "Add Users"
+msgstr ""
+
+#: Template/Element/side_menu.ctp:72
+msgid "Control panel"
+msgstr ""
+
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Error/error400.ctp:38
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+

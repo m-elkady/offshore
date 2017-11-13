@@ -1,0 +1,51 @@
+2017-10-17 09:32:14 Error: [ParseError] syntax error, unexpected '<' in /Users/mohammedelkady/public_html/ships/tmp/bake/index-ctp.php on line 73
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/View/View.php(1157): Bake\View\BakeView->_evaluate(NULL, Array)
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/View/BakeView.php(140): Cake\View\View->_render('/Users/mohammed...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php(88): Bake\View\BakeView->render('Template/index')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(441): Bake\Shell\Task\BakeTemplateTask->generate('Template/index')
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(399): Bake\Shell\Task\TemplateTask->getContent('index')
+#5 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(148): Bake\Shell\Task\TemplateTask->bake('index', true)
+#6 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(508): Bake\Shell\Task\TemplateTask->main('fire_extinguish...', 'index')
+#7 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#11 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#12 {main}
+
+
+2017-10-17 09:33:43 Error: [ParseError] syntax error, unexpected '<' in /Users/mohammedelkady/public_html/ships/tmp/bake/index-ctp.php on line 73
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/View/View.php(1157): Bake\View\BakeView->_evaluate(NULL, Array)
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/View/BakeView.php(140): Cake\View\View->_render('/Users/mohammed...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php(88): Bake\View\BakeView->render('Template/index')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(441): Bake\Shell\Task\BakeTemplateTask->generate('Template/index')
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(399): Bake\Shell\Task\TemplateTask->getContent('index')
+#5 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(148): Bake\Shell\Task\TemplateTask->bake('index', true)
+#6 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(508): Bake\Shell\Task\TemplateTask->main('fire_extinguish...', 'index')
+#7 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#11 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#12 {main}
+
+
+2017-10-17 09:34:54 Error: [ParseError] syntax error, unexpected '<' in /Users/mohammedelkady/public_html/ships/tmp/bake/index-ctp.php on line 73
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/View/View.php(1157): Bake\View\BakeView->_evaluate(NULL, Array)
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/View/BakeView.php(140): Cake\View\View->_render('/Users/mohammed...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php(88): Bake\View\BakeView->render('Template/index')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(441): Bake\Shell\Task\BakeTemplateTask->generate('Template/index')
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(399): Bake\Shell\Task\TemplateTask->getContent('index')
+#5 /Users/mohammedelkady/public_html/ships/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(148): Bake\Shell\Task\TemplateTask->bake('index', true)
+#6 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(508): Bake\Shell\Task\TemplateTask->main('fire_extinguish...', 'index')
+#7 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#11 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#12 {main}
+
+

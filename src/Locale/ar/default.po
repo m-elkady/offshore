@@ -1,0 +1,1821 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-07-17 13:31+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+
+#: Controller/Admin/PagesController.php:52;85
+msgid "The page has been saved."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:55;88
+msgid "The page could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:114
+msgid "The page has been deleted."
+msgstr ""
+
+#: Controller/Admin/PagesController.php:116
+msgid "The page could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:55;81
+msgid "The permission has been saved."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:58;84
+msgid "The permission could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:105
+msgid "The permission has been deleted."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:107
+msgid "The permission could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:52;76
+msgid "The setting has been saved."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:55;79
+msgid "The setting could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:97
+msgid "The setting has been deleted."
+msgstr ""
+
+#: Controller/Admin/SettingsController.php:99
+msgid "The setting could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:44
+msgid "Your username or password was incorrect."
+msgstr "اسم المستخدم أو كلمة المرور غير صحيح"
+
+#: Controller/Admin/UsersController.php:49
+msgid "Good Bye"
+msgstr ""
+
+#: Controller/Admin/UsersController.php:88;113
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:91;116
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:137
+msgid "The user has been deleted."
+msgstr ""
+
+
+
+#: Model/Behavior/ImageBehavior.php:207
+msgid "Please upload images only (gif, png, jpg)."
+msgstr "من فضلك ارفع صور فقط (gif, png, jpg)"
+
+
+#: Model/Table/CategoriesTable.php:79;80
+#: Model/Table/FaqsTable.php:53;56
+#: Model/Table/ImagesTable.php:72;75;84
+#: Model/Table/NewsTable.php:74;84;87
+#: Model/Table/PagesTable.php:69;70;71;72;73
+#: Model/Table/PollQuestionOptionsTable.php:58;61
+#: Model/Table/PollsTable.php:66;69
+#: Model/Table/UsersTable.php:42;44;46
+#: Template/Admin/Articles/add.ctp:77;80;83
+#: Template/Admin/Faqs/add.ctp:83;86;89;92
+#: Template/Admin/Images/add.ctp:77;80
+#: Template/Admin/News/add.ctp:144;147;150
+#: Template/Admin/Pages/add.ctp:97;100;103;106
+#: Template/Admin/PollQuestions/add.ctp:152;155;158;161
+#: Template/Admin/PollQuestions/view.ctp:46
+#: Template/Admin/Polls/add.ctp:76;79
+#: Template/Admin/Polls/view.ctp:81
+msgid "Required"
+msgstr "هذا الحقل مطلوب"
+
+#: Model/Table/PollQuestionsTable.php:41
+msgid "TextBox"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:42
+msgid "Radio Single Choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:43
+msgid "SelectBox Single Choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:44
+msgid "Multi choice"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:45
+msgid "Essay text"
+msgstr ""
+
+#: Model/Table/PollQuestionsTable.php:46
+msgid "Label"
+msgstr ""
+
+
+
+#: Template/Admin/Ads/add.ctp:30
+#: Template/Admin/Ads/edit.ctp:26
+#: Template/Admin/Articles/add.ctp:52
+#: Template/Admin/Articles/edit.ctp:41
+#: Template/Admin/Categories/add.ctp:47
+#: Template/Admin/Categories/edit.ctp:28
+#: Template/Admin/Faqs/add.ctp:45
+#: Template/Admin/Faqs/edit.ctp:24
+#: Template/Admin/Groups/add.ctp:23
+#: Template/Admin/Groups/edit.ctp:22
+#: Template/Admin/Images/add.ctp:52
+#: Template/Admin/Images/edit.ctp:29
+#: Template/Admin/News/add.ctp:119
+#: Template/Admin/News/edit.ctp:40
+#: Template/Admin/Pages/add.ctp:54
+#: Template/Admin/Pages/edit.ctp:27
+#: Template/Admin/Permissions/add.ctp:25
+#: Template/Admin/Permissions/edit.ctp:23
+#: Template/Admin/PollQuestions/add.ctp:114
+#: Template/Admin/PollQuestions/edit.ctp:25
+#: Template/Admin/Polls/add.ctp:44
+#: Template/Admin/Polls/edit.ctp:23
+#: Template/Admin/Settings/add.ctp:16
+#: Template/Admin/Settings/edit.ctp:15
+#: Template/Admin/Users/add.ctp:15
+#: Template/Admin/Users/edit.ctp:12
+#: Template/Admin/Writers/add.ctp:48
+#: Template/Admin/Writers/edit.ctp:24
+msgid "Submit"
+msgstr "حفظ"
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+
+#: Template/Admin/Ads/index.ctp:22
+#: Template/Admin/Ads/view.ctp:3
+#: Template/Admin/Articles/index.ctp:17
+#: Template/Admin/Articles/view.ctp:3
+#: Template/Admin/Categories/index.ctp:23
+#: Template/Admin/Categories/view.ctp:3;83;133
+#: Template/Admin/Faqs/index.ctp:19
+#: Template/Admin/Faqs/view.ctp:3
+#: Template/Admin/Groups/index.ctp:17
+#: Template/Admin/Groups/view.ctp:3;45;73
+#: Template/Admin/Images/index.ctp:18
+#: Template/Admin/Images/view.ctp:3
+#: Template/Admin/News/index.ctp:18
+#: Template/Admin/News/view.ctp:3;121
+#: Template/Admin/Pages/index.ctp:17
+#: Template/Admin/Pages/view.ctp:3
+#: Template/Admin/Permissions/index.ctp:16
+#: Template/Admin/Permissions/view.ctp:3;37
+#: Template/Admin/PollQuestions/index.ctp:22
+#: Template/Admin/PollQuestions/view.ctp:3;60
+#: Template/Admin/Polls/index.ctp:17
+#: Template/Admin/Polls/view.ctp:3;52;84
+#: Template/Admin/Settings/index.ctp:16
+#: Template/Admin/Settings/view.ctp:3
+#: Template/Admin/Users/index.ctp:19
+#: Template/Admin/Users/view.ctp:3
+#: Template/Admin/Writers/index.ctp:19
+#: Template/Admin/Writers/view.ctp:3;69
+msgid "Actions"
+msgstr "الخيارات"
+
+#: Template/Admin/Ads/index.ctp:34
+#: Template/Admin/Ads/view.ctp:47
+#: Template/Admin/Articles/view.ctp:79;83;87
+#: Template/Admin/Categories/view.ctp:63
+#: Template/Admin/Faqs/view.ctp:31
+#: Template/Admin/Images/view.ctp:37
+#: Template/Admin/News/view.ctp:77;81;85
+#: Template/Admin/Pages/view.ctp:31
+#: Template/Admin/Permissions/view.ctp:25
+#: Template/Admin/PollQuestions/index.ctp:32
+#: Template/Admin/PollQuestions/view.ctp:47
+#: Template/Admin/Polls/view.ctp:39
+#: Template/Admin/Writers/view.ctp:37
+msgid "Yes"
+msgstr "نعم"
+
+#: Template/Admin/Ads/index.ctp:34
+#: Template/Admin/Ads/view.ctp:47
+#: Template/Admin/Articles/view.ctp:79;83;87
+#: Template/Admin/Categories/view.ctp:63
+#: Template/Admin/Faqs/view.ctp:31
+#: Template/Admin/Images/view.ctp:37
+#: Template/Admin/News/view.ctp:77;81;85
+#: Template/Admin/Pages/view.ctp:31
+#: Template/Admin/Permissions/view.ctp:25
+#: Template/Admin/PollQuestions/index.ctp:32
+#: Template/Admin/PollQuestions/view.ctp:47
+#: Template/Admin/Polls/view.ctp:39
+#: Template/Admin/Writers/view.ctp:37
+msgid "No"
+msgstr "لا"
+
+#: Template/Admin/Ads/index.ctp:38
+#: Template/Admin/Articles/index.ctp:28
+#: Template/Admin/Categories/index.ctp:40
+#: Template/Admin/Categories/view.ctp:101;158
+#: Template/Admin/Faqs/index.ctp:32
+#: Template/Admin/Groups/index.ctp:28
+#: Template/Admin/Groups/view.ctp:57;82
+#: Template/Admin/Images/index.ctp:30
+#: Template/Admin/News/index.ctp:31
+#: Template/Admin/News/view.ctp:131
+#: Template/Admin/Pages/index.ctp:29
+#: Template/Admin/Permissions/index.ctp:26
+#: Template/Admin/Permissions/view.ctp:47
+#: Template/Admin/PollQuestions/index.ctp:35
+#: Template/Admin/PollQuestions/view.ctp:71
+#: Template/Admin/Polls/index.ctp:29
+#: Template/Admin/Polls/view.ctp:63;98
+#: Template/Admin/Settings/index.ctp:26
+#: Template/Admin/Users/index.ctp:33
+#: Template/Admin/Writers/index.ctp:31
+#: Template/Admin/Writers/view.ctp:99
+msgid "Edit"
+msgstr "تعديل"
+
+#: Template/Admin/Ads/index.ctp:39
+#: Template/Admin/Articles/index.ctp:29
+#: Template/Admin/Categories/index.ctp:41
+#: Template/Admin/Categories/view.ctp:102;159
+#: Template/Admin/Faqs/index.ctp:33
+#: Template/Admin/Groups/index.ctp:29
+#: Template/Admin/Groups/view.ctp:58;83
+#: Template/Admin/Images/index.ctp:31
+#: Template/Admin/News/index.ctp:32
+#: Template/Admin/News/view.ctp:132
+#: Template/Admin/Pages/index.ctp:30
+#: Template/Admin/Permissions/index.ctp:27
+#: Template/Admin/Permissions/view.ctp:48
+#: Template/Admin/PollQuestions/index.ctp:36
+#: Template/Admin/PollQuestions/view.ctp:72
+#: Template/Admin/Polls/index.ctp:30
+#: Template/Admin/Polls/view.ctp:64;99
+#: Template/Admin/Settings/index.ctp:27
+#: Template/Admin/Users/index.ctp:34
+#: Template/Admin/Writers/index.ctp:32
+#: Template/Admin/Writers/view.ctp:100
+msgid "Delete"
+msgstr "حذف"
+
+#: Template/Admin/Ads/index.ctp:39
+#: Template/Admin/Ads/view.ctp:5
+#: Template/Admin/Articles/index.ctp:29
+#: Template/Admin/Articles/view.ctp:5
+#: Template/Admin/Categories/index.ctp:41
+#: Template/Admin/Categories/view.ctp:5;102;159
+#: Template/Admin/Faqs/index.ctp:33
+#: Template/Admin/Faqs/view.ctp:5
+#: Template/Admin/Groups/index.ctp:29
+#: Template/Admin/Groups/view.ctp:5;58;83
+#: Template/Admin/Images/index.ctp:31
+#: Template/Admin/Images/view.ctp:5
+#: Template/Admin/News/index.ctp:32
+#: Template/Admin/News/view.ctp:5;132
+#: Template/Admin/Pages/index.ctp:30
+#: Template/Admin/Pages/view.ctp:5
+#: Template/Admin/Permissions/index.ctp:27
+#: Template/Admin/Permissions/view.ctp:5;48
+#: Template/Admin/PollQuestions/index.ctp:36
+#: Template/Admin/PollQuestions/view.ctp:5;72
+#: Template/Admin/Polls/index.ctp:30
+#: Template/Admin/Polls/view.ctp:5;64;99
+#: Template/Admin/Settings/index.ctp:27
+#: Template/Admin/Settings/view.ctp:5
+#: Template/Admin/Users/index.ctp:34
+#: Template/Admin/Users/view.ctp:5
+#: Template/Admin/Writers/index.ctp:32
+#: Template/Admin/Writers/view.ctp:5;100
+msgid "Are you sure you want to delete # {0}?"
+msgstr "هل أنت متأكد من حذف # {0} ؟"
+
+#: Template/Admin/Ads/index.ctp:51
+#: Template/Admin/Articles/index.ctp:41
+#: Template/Admin/Categories/index.ctp:53
+#: Template/Admin/Faqs/index.ctp:45
+#: Template/Admin/Groups/index.ctp:41
+#: Template/Admin/Images/index.ctp:41
+#: Template/Admin/News/index.ctp:44
+#: Template/Admin/Pages/index.ctp:42
+#: Template/Admin/Permissions/index.ctp:39
+#: Template/Admin/PollQuestions/index.ctp:46
+#: Template/Admin/Polls/index.ctp:42
+#: Template/Admin/Settings/index.ctp:35
+#: Template/Admin/Users/index.ctp:44
+#: Template/Admin/Writers/index.ctp:44
+msgid "previous"
+msgstr "السابق"
+
+#: Template/Admin/Ads/index.ctp:55
+#: Template/Admin/Articles/index.ctp:45
+#: Template/Admin/Categories/index.ctp:57
+#: Template/Admin/Faqs/index.ctp:49
+#: Template/Admin/Groups/index.ctp:45
+#: Template/Admin/Images/index.ctp:45
+#: Template/Admin/News/index.ctp:48
+#: Template/Admin/Pages/index.ctp:46
+#: Template/Admin/Permissions/index.ctp:43
+#: Template/Admin/PollQuestions/index.ctp:50
+#: Template/Admin/Polls/index.ctp:46
+#: Template/Admin/Settings/index.ctp:37
+#: Template/Admin/Users/index.ctp:46
+#: Template/Admin/Writers/index.ctp:48
+msgid "next"
+msgstr "التالى"
+
+#: Template/Admin/Ads/view.ctp:14
+#: Template/Admin/Articles/add.ctp:33
+#: Template/Admin/Categories/add.ctp:33
+#: Template/Admin/Groups/view.ctp:71
+#: Template/Admin/Images/add.ctp:33
+#: Template/Admin/Images/index.ctp:14
+#: Template/Admin/News/add.ctp:55
+#: Template/Admin/Pages/add.ctp:33
+#: Template/Admin/Permissions/view.ctp:16
+#: Template/Admin/PollQuestions/add.ctp:55
+#: Template/Admin/Polls/add.ctp:33
+#: Template/Admin/Polls/index.ctp:14
+#: Template/Admin/Writers/add.ctp:33
+msgid "Title"
+msgstr "العنوان"
+
+#: Template/Admin/Ads/view.ctp:18
+msgid "Url"
+msgstr "الرابط"
+
+#: Template/Admin/Ads/view.ctp:22
+#: Template/Admin/Images/view.ctp:24
+#: Template/Admin/News/view.ctp:118
+#: Template/Admin/Pages/view.ctp:22
+#: Template/Admin/Writers/view.ctp:24
+msgid "Image"
+msgstr "الصورة"
+
+#: Template/Admin/Ads/view.ctp:26
+#: Template/Admin/Articles/view.ctp:50
+#: Template/Admin/Categories/view.ctp:38;71;114
+#: Template/Admin/Faqs/view.ctp:14
+#: Template/Admin/Groups/view.ctp:22;39;70
+#: Template/Admin/Images/view.ctp:28
+#: Template/Admin/News/view.ctp:60;117
+#: Template/Admin/Pages/view.ctp:26
+#: Template/Admin/Permissions/view.ctp:20;33
+#: Template/Admin/PollQuestions/view.ctp:30;55
+#: Template/Admin/Polls/view.ctp:26;47;76
+#: Template/Admin/Settings/view.ctp:18
+#: Template/Admin/Users/view.ctp:26
+#: Template/Admin/Writers/view.ctp:28;45
+msgid "Id"
+msgstr "#"
+
+#: Template/Admin/Ads/view.ctp:30
+msgid "Location"
+msgstr "الموقع"
+
+#: Template/Admin/Ads/view.ctp:34
+#: Template/Admin/Categories/view.ctp:50;79
+#: Template/Admin/Faqs/view.ctp:18
+#: Template/Admin/PollQuestions/view.ctp:59
+msgid "Display Order"
+msgstr "الترتيب"
+
+#: Template/Admin/Ads/view.ctp:38
+#: Template/Admin/Articles/view.ctp:70
+#: Template/Admin/Categories/view.ctp:54;81;131
+#: Template/Admin/Faqs/view.ctp:22
+#: Template/Admin/Groups/view.ctp:26;43
+#: Template/Admin/Images/view.ctp:32
+#: Template/Admin/News/view.ctp:68;120
+#: Template/Admin/Permissions/view.ctp:35
+#: Template/Admin/PollQuestions/view.ctp:38
+#: Template/Admin/Polls/view.ctp:30;51;82
+#: Template/Admin/Users/view.ctp:30
+#: Template/Admin/Writers/view.ctp:32;67
+msgid "Created"
+msgstr "إضيفت فى"
+
+#: Template/Admin/Ads/view.ctp:42
+#: Template/Admin/Articles/view.ctp:74
+#: Template/Admin/Categories/view.ctp:132
+#: Template/Admin/Groups/view.ctp:30
+#: Template/Admin/News/view.ctp:72
+#: Template/Admin/Permissions/view.ctp:36
+#: Template/Admin/Polls/view.ctp:34
+#: Template/Admin/Writers/view.ctp:68
+msgid "Modified"
+msgstr "عدلت فى"
+
+#: Template/Admin/Ads/view.ctp:46
+#: Template/Admin/Articles/view.ctp:78
+#: Template/Admin/Categories/view.ctp:62;80;126
+#: Template/Admin/Faqs/view.ctp:30
+#: Template/Admin/Groups/view.ctp:72
+#: Template/Admin/Images/view.ctp:36
+#: Template/Admin/News/view.ctp:76
+#: Template/Admin/Permissions/view.ctp:24
+#: Template/Admin/Polls/view.ctp:38
+#: Template/Admin/Writers/view.ctp:36;58
+msgid "Active"
+msgstr "مفعل"
+
+#: Template/Admin/Articles/add.ctp:9
+#: Template/Admin/Articles/edit.ctp:8
+#: Template/Element/side_menu.ctp:54
+msgid "Add Article"
+msgstr "إضافة مقال"
+
+#: Template/Admin/Articles/add.ctp:11
+#: Template/Admin/Articles/edit.ctp:10
+#: Template/Admin/Articles/view.ctp:4
+msgid "Edit Article"
+msgstr "تعديل مقال"
+
+#: Template/Admin/Articles/add.ctp:34
+#: Template/Admin/Images/add.ctp:34
+#: Template/Admin/News/add.ctp:56
+msgid "Description"
+msgstr "المحتوى"
+
+
+#: Template/Admin/Articles/add.ctp:37
+#: Template/Admin/Categories/view.ctp:125
+#: Template/Admin/Images/add.ctp:35
+#: Template/Admin/News/add.ctp:59
+#: Template/Admin/News/view.ctp:105
+msgid "Tags"
+msgstr "الوسوم"
+
+
+#: Template/Admin/Articles/view.ctp:10
+#: Template/Admin/Categories/view.ctp:6
+#: Template/Admin/News/view.ctp:8
+#: Template/Element/side_menu.ctp:17
+msgid "List Categories"
+msgstr "عرض التصنيفات"
+
+
+#: Template/Admin/Articles/view.ctp:18
+#: Template/Admin/Categories/view.ctp:18;72;115
+#: Template/Admin/Images/view.ctp:16
+#: Template/Admin/News/view.ctp:20
+#: Template/Admin/Pages/view.ctp:14
+#: Template/Admin/PollQuestions/view.ctp:18;57
+#: Template/Admin/Polls/view.ctp:18;77
+#: Template/Admin/Writers/view.ctp:16;46
+msgid "Ar Title"
+msgstr "العنوان"
+
+
+#: Template/Admin/Articles/view.ctp:30
+#: Template/Admin/Categories/view.ctp:26;74;120
+#: Template/Admin/Images/view.ctp:20
+#: Template/Admin/News/view.ctp:32
+#: Template/Admin/Pages/view.ctp:18
+#: Template/Admin/PollQuestions/view.ctp:22;58
+#: Template/Admin/Polls/view.ctp:22;78
+#: Template/Admin/Writers/view.ctp:20;51
+msgid "En Title"
+msgstr "العنوان الإنجليزى"
+
+
+#: Template/Admin/Articles/view.ctp:66
+#: Template/Admin/News/view.ctp:64
+#: Template/Admin/Writers/view.ctp:66
+msgid "Publish Date"
+msgstr "تاريخ النشر"
+
+#: Template/Admin/Categories/add.ctp:9
+#: Template/Admin/Categories/edit.ctp:9
+#: Template/Element/side_menu.ctp:18
+msgid "Add Category"
+msgstr "إضافة تصنيف"
+
+#: Template/Admin/Categories/add.ctp:11
+#: Template/Admin/Categories/edit.ctp:11
+#: Template/Admin/Categories/view.ctp:4
+msgid "Edit Category"
+msgstr "تعديل تصنيف"
+
+#: Template/Admin/Categories/add.ctp:42
+msgid "No Parent"
+msgstr "لا يوجد تصنيف رئيسى"
+
+#: Template/Admin/Categories/index.ctp:5
+msgid "Categories"
+msgstr "التصنيفات"
+
+
+#: Template/Admin/Categories/view.ctp:58;82
+#: Template/Admin/Faqs/view.ctp:26
+#: Template/Admin/Groups/view.ctp:44
+#: Template/Admin/PollQuestions/view.ctp:42
+#: Template/Admin/Polls/view.ctp:83
+#: Template/Admin/Users/view.ctp:34
+msgid "Updated"
+msgstr "عدلت فى"
+
+#: Template/Admin/Groups/view.ctp:8
+#: Template/Admin/Users/view.ctp:6
+#: Template/Element/side_menu.ctp:59
+msgid "List Users"
+msgstr "عرض المستخدمين"
+
+#: Template/Admin/Groups/view.ctp:9
+#: Template/Admin/Users/view.ctp:7
+msgid "New User"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:10
+#: Template/Admin/Permissions/view.ctp:6
+msgid "List Permissions"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:11
+#: Template/Admin/Permissions/view.ctp:7
+msgid "New Permission"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:18
+#: Template/Admin/Permissions/view.ctp:34
+msgid "Name"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:35
+msgid "Related Users"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:40
+#: Template/Admin/Users/login.ctp:68
+#: Template/Admin/Users/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:41
+#: Template/Admin/Users/login.ctp:75
+#: Template/Admin/Users/view.ctp:18
+msgid "Password"
+msgstr ""
+
+#: Template/Admin/Groups/view.ctp:42
+msgid "Group Id"
+msgstr ""
+
+
+
+
+#: Template/Admin/News/add.ctp:67
+msgid "Select Category"
+msgstr "اختر تصنيف"
+
+
+#: Template/Admin/Pages/add.ctp:7
+#: Template/Admin/Pages/edit.ctp:9
+#: Template/Element/side_menu.ctp:7
+msgid "Add Page"
+msgstr "إضافة صفحة"
+
+#: Template/Admin/Pages/add.ctp:9
+#: Template/Admin/Pages/edit.ctp:11
+#: Template/Admin/Pages/view.ctp:4
+msgid "Edit Page"
+msgstr ""
+
+#: Template/Admin/Pages/add.ctp:34
+msgid "Content"
+msgstr "المحتوى"
+
+#: Template/Admin/Pages/add.ctp:45
+msgid "No parent"
+msgstr "صفحة رئيسية"
+
+#: Template/Admin/Pages/index.ctp:5
+msgid "Pages"
+msgstr "الصفحات الداخلية"
+
+#: Template/Admin/Pages/view.ctp:5
+msgid "Delete Page"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:6
+#: Template/Element/side_menu.ctp:6
+msgid "List Pages"
+msgstr "عرض الصفحات"
+
+#: Template/Admin/Pages/view.ctp:7
+msgid "New Page"
+msgstr ""
+
+#: Template/Admin/Pages/view.ctp:30
+msgid "Add To Mainmenu"
+msgstr "إضافة إلى القائمة الرئيسية"
+
+
+
+#: Template/Admin/Settings/add.ctp:6
+#: Template/Element/side_menu.ctp:66
+msgid "Add Setting"
+msgstr "أضف إعداد"
+
+#: Template/Admin/Settings/edit.ctp:5
+#: Template/Admin/Settings/view.ctp:4
+msgid "Edit Setting"
+msgstr "تعديل إعداد"
+
+#: Template/Admin/Settings/index.ctp:5
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: Template/Admin/Settings/view.ctp:5
+msgid "Delete Setting"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:6
+#: Template/Element/side_menu.ctp:65
+msgid "List Settings"
+msgstr "عرض الإعدادات"
+
+#: Template/Admin/Settings/view.ctp:7
+msgid "New Setting"
+msgstr ""
+
+#: Template/Admin/Settings/view.ctp:23
+msgid "Value"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:5
+msgid "Add User"
+msgstr "أضف مستخدم"
+
+#: Template/Admin/Users/edit.ctp:5
+#: Template/Admin/Users/view.ctp:4
+msgid "Edit User"
+msgstr "تعديل مستخدم"
+
+#: Template/Admin/Users/index.ctp:5
+msgid "Users"
+msgstr "المستخدمين"
+
+#: Template/Admin/Users/index.ctp:16
+msgid "Group"
+msgstr "المجموعة"
+
+#: Template/Admin/Users/view.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:22
+msgid "Role"
+msgstr ""
+
+#: Template/Element/image_between.ctp:3
+msgid "Preview"
+msgstr "مشاهدة"
+
+#: Template/Element/side_menu.ctp:12
+msgid "List Contact Us messages"
+msgstr "عرض رسائل اتصل بنا"
+
+
+#: Template/Element/side_menu.ctp:35
+msgid "List FAQ"
+msgstr "عرض الأسئلة"
+
+#: Template/Element/side_menu.ctp:36
+msgid "Add FAQ"
+msgstr "إضافة سؤال"
+
+
+#: Template/Element/side_menu.ctp:72
+msgid "Control panel"
+msgstr "لوحة التحكم"
+
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Error/error400.ctp:38
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+msgid "Admin"
+msgstr "لوحة التحكم"
+msgid "Add"
+msgstr "إضافة"
+
+
+
+msgid "Parent"
+msgstr "تصنيف رئيسى"
+
+msgid "Category"
+msgstr "التصنيف"
+
+msgid "Contacts"
+msgstr "رسائل اتصل بنا"
+
+
+msgid "Please upload files with these allowed types {0}"
+msgstr "من فضلك قم برفع ملفات تتوافق مع الأنواع الآتية {0}"
+
+msgid " for field {0}"
+msgstr " للحقل {0}"
+
+msgid "Facebook"
+msgstr "فيسبوك"
+msgid "Twitter"
+msgstr "تويتر"
+msgid "LinkedIn"
+msgstr "لينكدإن"
+
+msgid "Youtube"
+msgstr "يوتيوب"
+msgid "Google Plus"
+msgstr "جوجل بلس"
+
+msgid "Social network links"
+msgstr "روابط مواقع التواصل الاجتماعى"
+
+msgid "SocialNetworks"
+msgstr "روابط مواقع التواصل الاجتماعى"
+
+msgid "Contact information"
+msgstr "بيانات التواصل"
+
+msgid "Email"
+msgstr "البريد الإلكترونى"
+
+msgid "Telephone"
+msgstr "التليفون الأرضى"
+
+msgid "Mobile"
+msgstr "الهاتف المحمول"
+
+msgid "Address"
+msgstr "العنوان"
+
+msgid "Arabic Site name"
+msgstr "اسم الموقع العربى"
+
+msgid "English Site name"
+msgstr "English Site name"
+
+msgid "General configuration"
+msgstr "اعدادات عامة"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Menu"
+msgstr "القائمة"
+
+msgid "Choose menu"
+msgstr "اختر قائمة"
+
+msgid "Hello"
+msgstr "اهلاً بك"
+
+
+msgid "View"
+msgstr "مشاهدة"
+
+msgid "View News"
+msgstr "مشاهدة الخبر"
+
+msgid "Publish"
+msgstr "نشر"
+
+msgid "Related Videos"
+msgstr "الفيديوهات المرتبطة"
+
+msgid "Videos"
+msgstr "الفيديوهات"
+
+msgid "Close"
+msgstr "إغلاق"
+
+msgid "Search Results"
+msgstr "نتائج البحث"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Load more results"
+msgstr "المزيد من نتائج البحث"
+
+
+
+msgid "Options"
+msgstr "الاختيارات"
+
+msgid "Passwords do not match"
+msgstr "كلمتى السر غير متطابقتين"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Confirm password"
+msgstr "تأكيد كلمة المرور"
+
+msgid "Full Name"
+msgstr "الاسم بالكامل"
+
+msgid "This field cannot be left empty"
+msgstr "هذا الحقل مطلوب"
+
+msgid "This file is too large"
+msgstr "حجم الملف كبير"
+
+msgid "Please enter a valid url"
+msgstr "من فضلك أدخل رابط صالح"
+
+msgid "Please enter a valid email"
+msgstr "من فضلك أدخل بريد إلكترونى صالح"
+
+msgid "This file shouldn't excceed the memory size {0}"
+msgstr "الملف لا يجب أن يزيد عن {0}"
+
+msgid "This field accepts numbers only"
+msgstr "من فضلك أدخل أرقام فقط"
+
+
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Featured"
+msgstr "مميز"
+
+msgid "Read more"
+msgstr "اقرأ المزيد"
+
+msgid "More"
+msgstr "المزيد"
+
+
+#الميزانية
+
+msgid "Financial Department"
+msgstr "الإدارة المالية"
+
+msgid "Budget Control"
+msgstr "مراقبة الميزانية"
+
+msgid "Add New Transaction"
+msgstr "إضافة معاملة جديدة"
+
+msgid "Budget Management"
+msgstr "إدارة الميزانية"
+
+#بنود الميزانية
+msgid "Budget Items"
+msgstr "بنود الميزانية"
+
+
+msgid "Add Budget Item"
+msgstr "إضافة بند ميزانية"
+
+msgid "Edit Budget Item"
+msgstr "تعديل بند ميزانية"
+
+msgid "Item Number"
+msgstr "رقم البند"
+
+msgid "Enter Item Number"
+msgstr "أدخل رقم البند"
+
+msgid "Item Title"
+msgstr "وصف البند"
+
+msgid "The budget item has been saved."
+msgstr "تم حفظ بند الميزانية."
+
+msgid "The budget item could not be saved. Please, try again."
+msgstr "لم يتم حفظ بند الميزانية ، حاول مرة أخرى"
+
+msgid "The budget item has been deleted."
+msgstr "تم حذف بند الميزانية."
+
+
+#انواع المعاملات
+
+msgid "Transactions Types"
+msgstr "أنواع المعاملات"
+
+msgid "Add Transactions Type"
+msgstr "إضافة نوع معاملة"
+
+msgid "Edit Transactions Type"
+msgstr "تعديل نوع معاملة"
+
+msgid "Choose Item"
+msgstr "اختر بند"
+
+msgid "Spend on item"
+msgstr "تصرف على بند"
+
+msgid "With Contract"
+msgstr "تنفذ بعقد"
+
+msgid "With Trust Order"
+msgstr "تبدأ بأمر تعميد"
+
+msgid "The transactions type has been saved."
+msgstr "تم حفظ نوع المعاملات."
+
+msgid "The transactions type has been deleted."
+msgstr "تم حذف نوع المعاملات."
+
+msgid "The transactions type could not be saved. Please, try again."
+msgstr "لم يتم حفظ نوع المعاملات ، حاول مرة أخرى"
+
+
+#المعاملات
+
+msgid "Transaction Number"
+msgstr "رقم العملية"
+
+msgid "Transactions Type"
+msgstr "نوع المعاملة"
+
+msgid "Add Transaction"
+msgstr "أضف معاملة"
+
+msgid "Edit Transaction"
+msgstr "تعديل المعاملة"
+
+msgid "Transactions"
+msgstr "المعاملات المالية"
+
+msgid "Transaction Date"
+msgstr "تاريخ المعاملة"
+
+msgid "Related To Previous Transaction"
+msgstr "مرتبط بمعاملة سابقة"
+
+msgid "Previous Transaction No."
+msgstr "رقم المعاملة السابقة"
+
+msgid "Purpose"
+msgstr "الغرض"
+
+msgid "Choose Purpose"
+msgstr "اختر الغرض"
+
+msgid "Contractor"
+msgstr "المقاول"
+
+msgid "Choose Contractor"
+msgstr "اختر المقاول"
+
+msgid "Financial Commitment Letter"
+msgstr "خطاب طلب الارتباط"
+
+msgid "Financial Commitment No."
+msgstr "رقم الارتباط المالى"
+
+msgid "Financial Commitment No."
+msgstr "رقم الارتباط المالى"
+
+msgid "Trust Order No"
+msgstr "رقم أمر التعميد"
+
+msgid "Next Exchange Date"
+msgstr "تاريخ الصرف القادم"
+
+msgid "Vertical Coding Number"
+msgstr "رقم الترميز العمودى"
+
+msgid "Copies Number"
+msgstr "عدد النسخ"
+
+msgid "Notes"
+msgstr "ملاحظات"
+
+msgid "Dean Signature"
+msgstr "توقيع عميد الكلية"
+
+msgid "Finanical Commitment Letter Sent"
+msgstr "إرسال خطاب طلب الارتباط"
+
+msgid "Contract No."
+msgstr "رقم العقد"
+
+msgid "The Item"
+msgstr "البند"
+
+msgid "The Price"
+msgstr "المبلغ"
+
+msgid "The Reference"
+msgstr "المرجع"
+
+msgid "The Reference No."
+msgstr "رقم المرجع"
+
+msgid "Coding No."
+msgstr "رقم الترميز"
+
+msgid "The transaction has been saved."
+msgstr "تم حفظ المعاملة بنجاح"
+
+msgid "The transaction could not be saved. Please, try again."
+msgstr "لم يتم حفظ المعاملة ، حاول مرة أخرى"
+
+msgid "Select Transaction"
+msgstr "اختر معاملة"
+
+msgid "Transaction registry user"
+msgstr "مدخل المعاملة"
+
+msgid "Last Update By"
+msgstr "آخر تعديل بواسطة"
+
+msgid "Creation Date"
+msgstr "تاريخ الإدخال"
+
+msgid "Last Update Date"
+msgstr "تاريخ أخر تعديل"
+
+msgid "Transaction Details"
+msgstr "بيانات العملية"
+
+#المقاولين
+msgid "Contractors"
+msgstr "المقاولين"
+
+msgid "Add Contractor"
+msgstr "أضف مقاول"
+
+msgid "Edit Contractor"
+msgstr "تعديل مقاول"
+
+msgid "The contractor has been saved."
+msgstr "تم حفظ المقاول"
+
+msgid "The contractor could not be saved. Please, try again."
+msgstr "لم يتم حفظ المقاول ، حاول مرة أخرى"
+
+msgid "The contractor has been deleted."
+msgstr "تم حذف المقاول"
+
+# الأغراض
+msgid "Purposes"
+msgstr "الأغراض"
+
+msgid "Add Purpose"
+msgstr "أضف غرض"
+
+msgid "Edit Purpose"
+msgstr "تعديل غرض"
+
+msgid "The purpose has been saved."
+msgstr "تم حفظ الغرض"
+
+msgid "The purpose could not be saved. Please, try again."
+msgstr "لم يتم حفظ الغرض ، حاول مرة أخرى"
+
+msgid "The purpose has been deleted."
+msgstr "تم حذف الغرض"
+
+#خطاب طلب الارتباط
+
+msgid "Letter No"
+msgstr "رقم الخطاب"
+
+msgid "Sender"
+msgstr "المرسل"
+
+msgid "To"
+msgstr "إلى"
+
+msgid "Letter Date"
+msgstr "تاريخ الخطاب"
+
+msgid "Attachments"
+msgstr "المرفقات"
+
+msgid "The financial commitment letter has been saved."
+msgstr "تم حفظ خطاب طلب الارتباط"
+
+msgid "The financial commitment letter could not be saved. Please, try again."
+msgstr "لم يتم حفظ خطاب طلب الارتباط ، حاول مرة أخرى"
+
+msgid "The financial commitment letter has been deleted."
+msgstr "تم حذف خطاب طلب الارتباط"
+
+#أمر التعميد
+
+msgid "Trust Order"
+msgstr "أمر التعميد"
+
+msgid "Trust Order Date"
+msgstr "تاريخ أمر التعميد"
+
+msgid "Trusted Person"
+msgstr "المعتمد"
+
+msgid "Trust Order Content"
+msgstr "نص الاعتماد"
+
+msgid "Permisson Signature"
+msgstr "توقيع صاحب الصلاحية"
+
+msgid "Send Trust Order"
+msgstr "ارسال امر الاعتماد"
+
+msgid "The trust order has been saved."
+msgstr "تم حفظ أمر التعميد"
+
+msgid "The trust order could not be saved. Please, try again."
+msgstr "لم يتم حفظ أمر التعميد ، حاول مرة أخرى"
+
+msgid "The trust order letter has been deleted."
+msgstr "تم حذف أمر التعميد"
+
+#العقد
+
+msgid "Contract"
+msgstr "العقد"
+
+msgid "Contract Date"
+msgstr "تاريخ العقد"
+
+msgid "Contract No"
+msgstr "رقم العقد"
+
+msgid "Contract Title"
+msgstr "عنوان العقد"
+
+msgid "Send To Revision"
+msgstr "إرسال العقد للمراجعة"
+
+msgid "Commitment Received"
+msgstr "استلام موافقة ادارة العقود"
+
+msgid "Signatured"
+msgstr "توقيع العقد"
+
+msgid "Send To Regulators"
+msgstr "الإرسال إلى الجهات الرقابية"
+
+msgid "Social Security"
+msgstr "التأمينات الاجتماعية"
+
+msgid "Commercial Chamber"
+msgstr "الغرفة التجارية"
+
+msgid "Investigation"
+msgstr "هيئة الرقابة والتحقيق"
+
+msgid "Zakah Income"
+msgstr "مصلحة الزكاة والدخل"
+
+msgid "Other"
+msgstr "أخرى"
+
+msgid "Signed By"
+msgstr "الموقِّع"
+
+msgid "The contract has been saved."
+msgstr "تم حفظ العقد"
+
+msgid "The contract could not be saved. Please, try again."
+msgstr "لم يتم حفظ العقد ، حاول مرة أخرى"
+
+msgid "The contract letter has been deleted."
+msgstr "تم حذف أمر العقد"
+
+#الفاتورة 
+
+
+msgid "Invoice Islamic Date"
+msgstr "تاريخ الفاتورة الهجرى"
+
+msgid "Invoice Gregorian Date"
+msgstr "تاريخ الفاتورة الميلادى"
+
+msgid "Invoice No"
+msgstr "رقم الفاتورة"
+
+msgid "Order No"
+msgstr "رقم الطلبية"
+
+msgid "Addresses Count"
+msgstr "عدد العناوين"
+
+msgid "Copies Count"
+msgstr "عدد المجلدات او النسخ"
+
+msgid "Starting Vertical Coding No"
+msgstr "بداية رقم الترميز العمودي"
+
+msgid "Price according to the invoice (SAR)"
+msgstr "المبلغ حسب الفاتورة(ريال سعودي)"
+
+msgid "Invoice Details"
+msgstr "بيانات الفاتورة"
+
+msgid "Shipping Details If Exist"
+msgstr "بيانات فاتورة الشحن ان وجدت"
+
+msgid "Additional Details"
+msgstr "البيانات الإضافية"
+
+msgid "TrustOrder Details"
+msgstr "بيانات التعميد"
+
+msgid "Trust Supplier Name"
+msgstr "اسم المورد"
+
+msgid "Trust Financial Year"
+msgstr "السنة المالية"
+
+msgid "Trust Financial Year"
+msgstr "رقم أمر التعميد"
+
+msgid "Trust Approximately Price"
+msgstr "مبلغ تقريبي للتعميد"
+
+msgid "Trust Approximately Price"
+msgstr "مبلغ تقريبي للتعميد"
+
+msgid "Trust Container Type"
+msgstr "نوع الوعاء"
+
+msgid "Trust Container Type"
+msgstr "نوع الوعاء"
+
+msgid "Trust Beneficiary"
+msgstr "الجهة المستفيدة"
+
+msgid "Trust Beneficiary"
+msgstr "الجهة المستفيدة"
+
+#المستودعات
+
+msgid "Warehouse Stores"
+msgstr "مخازن المستودعات"
+
+msgid "Store Title"
+msgstr "عنوان المخزن"
+
+msgid "Store Number"
+msgstr "رقم المخزن"
+
+
+msgid "Warehouses"
+msgstr "المستودعات"
+
+
+msgid "Warehouse Department"
+msgstr "نظام المستودعات"
+
+msgid "Warehouses Managements"
+msgstr "الإدارات"
+
+msgid "Warehouses Stores"
+msgstr "المستودعات"
+
+msgid "Warehouses Employers"
+msgstr "الموظفين"
+
+msgid "Warehouses Category Item"
+msgstr "مجموعات الأصناف"
+
+msgid "Warehouses Item"
+msgstr "الأصناف"
+
+msgid "Warehouses Item Info"
+msgstr "معلومات الأصناف"
+
+msgid "Warehouses Custody Employers"
+msgstr "عهد الموظفين"
+
+msgid "Warehouses Sites"
+msgstr "المواقع"
+
+msgid "Warehouses Suppliers"
+msgstr "الموردين"
+
+
+
+
+#: Template/WarehouseCategoriesItems/add.ctp:34
+#: Template/WarehouseCategoriesItems/add.ctp:30
+#: Template/WarehouseCategoriesItems/index.ctp:34
+#: Template/WarehouseCategoriesItems/add.ctp:34
+#: Template/WarehouseCategoriesItems/edit.ctp:37
+#: Template/WarehouseManagements/add.ctp:12
+#: Template/WarehouseStores/add.ctp:20
+
+
+
+
+
+msgid "Add Warehouse Categories Item"
+msgstr "أضف مجموعة أصناف جديده"
+
+msgid "Edit Warehouse Categories Item"
+msgstr "تعديل علي مجموعة الاصناف "
+
+msgid "Category Item Number"
+msgstr "رمز مجموعة أصناف"
+
+msgid "Category Item Name"
+msgstr "اسم مجموعة أصناف"
+
+msgid "Warehouse Categories Items"
+msgstr "مجموعة الأصناف"
+
+
+msgid "Warehouse Managements"
+msgstr "الإدارات"
+
+msgid "Management Number"
+msgstr "رمز الإدارة"
+
+msgid "Management Name"
+msgstr "اسم الإدارة"
+
+
+msgid "Add Warehouse Management"
+msgstr "إضافة إدارة جديده"
+
+
+msgid "The warehouse management has been saved."
+msgstr "تم حفظ الإدارة بنجاح"
+
+msgid "Add Warehouse Store"
+msgstr  " إضافة مخزن جديد"
+
+
+#: Template/WarehouseSites/add.ctp:50;60;70
+#: Template/WarehouseSites/add.ctp:12
+#: Template/WarehouseSites/index.ctp:20
+
+msgid "Warehouse Sites"
+msgstr "قائمة المواقع"
+
+msgid "Site Name"
+msgstr "اسم الموقع"
+
+msgid "Site Number"
+msgstr "رمز الموقع"
+
+msgid "Add Warehouse Site"
+msgstr "إضافة موقع جديد"
+
+#: Template/WarehouseSuppliers/add.ctp:50;60;70
+#: Template/WarehouseSuppliers/add.ctp:12
+#: Template/WarehouseSuppliers/index.ctp:20
+
+msgid "Warehouse Suppliers"
+msgstr "الموردين"
+
+msgid "Supplier Name"
+msgstr "اسم المورد"
+
+msgid "Supplier Number"
+msgstr "رمز المورد"
+
+msgid "Add Warehouse Supplier"
+msgstr "إضافة مورد جديد"
+
+
+msgid "Warehouse Items Info"
+msgstr "قائمة معلومات الأصناف "
+
+
+msgid "Warehouse Custody Employers"
+msgstr "بيانات عهدة الموظفين"
+
+msgid "Custody Item Name"
+msgstr "الصنف"
+
+msgid "Custody Number"
+msgstr "رقم الملكية"
+
+msgid "Custody Serial"
+msgstr "رقم التسلسل"
+ 
+msgid "Custody State"
+msgstr "الحالة"
+
+msgid "Custody Notes"
+msgstr "ملاحظات"
+
+msgid "Add Warehouse Custody Employer"
+msgstr "إضافة عهدة موظف جديده"
+
+msgid "Warehouse Employers"
+msgstr "الموظفين"
+
+msgid "Emp Name"
+msgstr "اسم الموظف"
+
+msgid "Emp Number"
+msgstr "رقم الموظف"
+
+msgid "Add Warehouse Custody Employer"
+msgstr "إضافة عهدة موظف جديده"
+
+msgid "Emp Code"
+msgstr "الرقم الوظيفي"
+
+msgid "Emp Management"
+msgstr "الإدارة"
+
+msgid "Emp Site"
+msgstr "الموقع"
+
+msgid "Add Warehouse Employer"
+msgstr "إضافة موظف جديد"
+
+msgid "Warehouse Items"
+msgstr "قائمة الأصناف"
+
+msgid "Warehouse Item Number"
+msgstr "رمز الصنف"
+
+msgid "Warehouse Item Name"
+msgstr "اسم الصنف"
+
+msgid "Warehouse Category Item Name"
+msgstr "مجموعة الصنف"
+
+msgid "Add Warehouse Item"
+msgstr "إضافة صنف جديد"
+
+msgid "Item Name"
+msgstr "اسم الصنف"
+
+msgid "Add Warehouse Items Info"
+msgstr "إضافة معلومات صنف"
+
+msgid "Info Item Name"
+msgstr "الصنف"
+
+msgid "Contract Number"
+msgstr "رقم العقد"
+
+msgid "Info Owner Number"
+msgstr "رقم الملكية"
+
+msgid "Start Date Guarantee"
+msgstr "تاريخ بداية الضمان"
+
+msgid "Info Serial Number"
+msgstr "رقم التسلسل"
+
+msgid "End Date Guarantee"
+msgstr "تاريخ نهاية الضمان"
+
+msgid "Employer Number"
+msgstr "رقم الموظف"
+
+msgid "State"
+msgstr "الحالة"
+
+msgid "Order Item Number"
+msgstr "رقم الصنف"
+
+msgid "Order Item Name"
+msgstr "اسم الصنف"
+
+msgid "Order Item Type"
+msgstr "نوع الصنف"
+
+msgid "Order Item Category"
+msgstr "الوحدة"
+
+msgid "Order Item Count"
+msgstr "الكمية المطلوبه"
+
+msgid "Order Item Amount Recieved"
+msgstr "الكمية المصروفة"
+
+msgid "Order Item Price"
+msgstr "سعر الوحدة"
+
+msgid "Order Total Price"
+msgstr "القيمة الكلية"
+
+msgid "Warehouses Insert Form Orders"
+msgstr "طلبات الأصناف نموذج(7)"
+
+msgid "Warehouse Add Orders Items Form7"
+msgstr "التحكم بطلبات الأصناف نموذج( 7 )"
+
+msgid "Add Warehouse Add Orders Items Form7"
+msgstr "إضافة طلبات الأصناف نموذج( 7 )"
+
+msgid "Warehouses Recieved Form Orders"
+msgstr "إستلام الأصناف نموذج (7)"
+
+msgid "Recieved Orders Items Form7"
+msgstr "التحكم بإستلام الأصناف نموذج ( 7 )"
+
+msgid "Add Recieved Orders Items Form7"
+msgstr "إضافة إستلام الأصناف نموذج( 7 )"
+
+msgid "Add WarehouseManagements"
+msgstr "إضافة إدارة"
+
+msgid "Add RecievedOrdersItemsForm7"
+msgstr "إضافةطلب جديد"
+
+msgid "Add WarehouseAddOrdersItemsForm7"
+msgstr "إضافة"
+
+msgid "Add WarehouseCustodyEmployers"
+msgstr "إضافة عهد موظف"
+
+msgid "Add WarehouseItemsInfo"
+msgstr "إضافة معلومات صنف"
+
+msgid "Add WarehouseStores"
+msgstr "إضافة مستودع"
+
+msgid "Add WarehouseEmployers"
+msgstr "إضافة موظف جديد"
+
+msgid "Add WarehouseCategoriesItems"
+msgstr "إضافة مجموعة أصناف"
+
+msgid "Add WarehouseCategoriesItems"
+msgstr "إضافة كرت صنف"
+
+msgid "Add WarehouseSites"
+msgstr "إضافة موقع جديد"
+
+msgid "Add WarehouseSuppliers"
+msgstr "إضافة مورد"
+
+msgid "Add Warehouse Store"
+msgstr "إضافة مخزن جديد"
+
+msgid "Add Warehouse Store"
+msgstr "إضافة مخزن جديد"
+
+msgid "Add WarehouseItems"
+msgstr "إضافة صنف جديد"
+
+
+msgid "The warehouse store has been saved."
+msgstr "تم حفظ المخزن بنجاح "
+
+msgid "Edit Warehouse Store"
+msgstr "تعديل مخزن"
+
+msgid "Edit Warehouse Management"
+msgstr "تعديل بيانات الإدارة"
+
+msgid "The warehouse employer has been saved."
+msgstr "تم حفظ بيانات الموظف بنجاح "
+
+msgid "Edit Warehouse Employer"
+msgstr "تعديل بيانات موظف"
+
+msgid "Edit Warehouse Item"
+msgstr "تعديل بيانات صنف"
+
+msgid "Edit Warehouse Custody Employer"
+msgstr "تعديل بيانات عهدة الموظف"
+
+msgid "The warehouse custody employer has been saved."
+msgstr "تم حفظ بيانات عهدة الموظف بنجاح"
+
+msgid "The warehouse categories item has been saved."
+msgstr "تم تعديل بيانات مجموعة الاصناف بنجاح"
+
+msgid "The warehouse item has been saved."
+msgstr "تم حفظ بيانات الصنف بنجاح"
+
+msgid "Edit Warehouse Items Info"
+msgstr "تعديل بيانات الصنف"
+
+msgid "The warehouse items info has been saved."
+msgstr "تم حفظ بيانات الصنف بنجاح"
+
+msgid "Edit Warehouse Add Orders Items Form7"
+msgstr "تعديل بيانات طلب"
+
+msgid "The warehouse add orders items form7 has been saved."
+msgstr "تم حفظ بيانات الطلب بنجاح"
+
+msgid "Edit Warehouse Site"
+msgstr "تعديل بيانات الموقع"
+msgid "The warehouse site has been saved."
+msgstr "تم حفظ بيانات الموقع بنجاح"
+
+msgid "Edit Warehouse Supplier"
+msgstr "تعديل بيانات المورد"
+
+msgid "The warehouse supplier has been saved."
+msgstr "تم حفظ بيانات المورد بنجاح"
+
+msgid "Edit Recieved Orders Items Form7"
+msgstr "تعديل بيانات الطلب"
+
+msgid "The recieved orders items form7 has been saved."
+msgstr "تم حفظ بيانات الطلب بنجاح"
+
+msgid "Attachements Number"
+msgstr "عدد المرفقات "
+
+msgid "Total Attachments"
+msgstr "إجمالي المرفقات "
+
+msgid "Edit Financial Item"
+msgstr "صرف مستحقات المالية للمعاملة "
+
+msgid "Order Number"
+msgstr "رقم أمر الصرف"
+
+msgid "Financial Amount"
+msgstr "مبلغ الصرف"
+
+msgid "Attachements Name"
+msgstr "المرفقات"
+
+msgid "Add attachment"
+msgstr "إضافة مرفق" 
+
+msgid "Accepted Order"
+msgstr "إرسال أمر الصرف" 
+
+msgid "Signature"
+msgstr "توقيع عميد الكلية" 
+
+msgid "Financial Items"
+msgstr "التحكم ببنود الميزانية" 
+
+msgid "FinancialItems"
+msgstr "أمر الصرف" 
+
+msgid "Add Invoice"
+msgstr "إضافة فاتورة" 
+
+msgid "Price"
+msgstr "السعر" 
+
+msgid "Shipping Invoice Gorgian Date"
+msgstr "التاريخ الميلادي لفاتورة الشحن" 
+
+msgid "Shipping Invoice No"
+msgstr "رقم فاتورة الشحن" 
+
+msgid "Shipping Price"
+msgstr "مبلغ الشحن" 
+
+msgid "Invoice"
+msgstr "إضافة فاتورة" 
+
+msgid "User Full Name"
+msgstr "مدخل الفاتورة" 
+
+msgid "Choose file"
+msgstr "الفاتورة المرفقه PDF"
+
+msgid "Trust Financials Year"
+msgstr " السنة المالية"
+
+msgid "Edit Financial Year"
+msgstr "تعديل السنة المالية"
+
+msgid "Amount"
+msgstr "المبلغ"
+
+msgid "Year"
+msgstr "السنة المالية"
+
+msgid "Add Items"
+msgstr "إضافة بند جديد"
+
+msgid "Financial Years"
+msgstr "التحكم بالسنة المالية"
+
+msgid "The financial year has been saved."
+msgstr "تم حفظ بيانات الميزانية السنوية بنجاح  "
+
+msgid "Add Financial Year"
+msgstr "إدخال الميزانية للعام المالي"
+
+msgid "Budget Year Control"
+msgstr "التحكم بالميزانية "
+
+
+msgid "Financial Year"
+msgstr "مراقبة الميزانية "
+
+msgid "id transaction"
+msgstr "# رقم العملية"
+
+msgid "type transaction"
+msgstr "نوع العملية"
+
+msgid "number item"
+msgstr "البند"
+
+msgid "amount"
+msgstr "المبلغ"
+
+msgid "balance"
+msgstr "الرصيد"
+
+msgid "transaction name"
+msgstr "المرجع"
+
+msgid "date"
+msgstr "التاريخ "
+
+msgid "transatcion number"
+msgstr "رقم المرجع"
+
+msgid "The Date"
+msgstr "التاريخ "
+
+msgid "The Balance"
+msgstr "الرصيد "
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
