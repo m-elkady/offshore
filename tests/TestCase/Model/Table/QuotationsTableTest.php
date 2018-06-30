@@ -24,7 +24,10 @@ class QuotationsTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.quotations'
+        'app.quotations',
+        'app.quotation_items',
+        'app.clients',
+        'app.employees'
     ];
 
     /**

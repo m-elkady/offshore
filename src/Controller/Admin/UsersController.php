@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Controller\AdminController;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -22,33 +23,27 @@ class UsersController extends AdminController
         parent::initialize();
     }
 
-    public function beforeFilter(\Cake\Event\Event $event)
+    public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
-
-        $this->Auth->allow('add');
+//        $this->Auth->allow('add');
     }
 
     public function login()
     {
-        $this->viewBuilder()->layout('');
-
-        if ($this->Auth->user()) {
-            $this->redirect(['controller' => 'pages', 'action' => 'dashboard']);
-        }
+        $this->viewBuilder()->setLayout('');
         if ($this->request->is('post')) {
-
             $user = $this->Auth->identify();
-//            debug($user);exit;
             if ($user) {
-
                 $this->Auth->setUser($user);
-
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Your username or password was incorrect.'));
+        }else{
+            if ($this->Auth->user()) {
+                $this->redirect(['controller' => 'pages', 'action' => 'dashboard']);
+            }
         }
-
         $this->set('title_for_layout', __('login'));
     }
 

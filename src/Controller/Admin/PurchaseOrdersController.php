@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller\Admin;
 
 use App\Controller\AdminController;
@@ -20,6 +21,9 @@ class PurchaseOrdersController extends AdminController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Employees', 'Vendors'],
+        ];
         $purchaseOrders = $this->paginate($this->PurchaseOrders);
 
         $this->set(compact('purchaseOrders'));
@@ -30,13 +34,14 @@ class PurchaseOrdersController extends AdminController
      * View method
      *
      * @param string|null $id Purchase Order id.
+     *
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
         $purchaseOrder = $this->PurchaseOrders->get($id, [
-            'contain' => []
+            'contain' => ['Employees', 'Vendors', 'PurchaseOrderItems'],
         ]);
 
         $this->set('purchaseOrder', $purchaseOrder);
@@ -52,7 +57,7 @@ class PurchaseOrdersController extends AdminController
     {
         $purchaseOrder = $this->PurchaseOrders->newEntity();
         if ($this->request->is('post')) {
-            $purchaseOrder = $this->PurchaseOrders->patchEntity($purchaseOrder, $this->request->getData());
+            $purchaseOrder = $this->PurchaseOrders->patchEntity($purchaseOrder, $this->request->getData(), ['associated' => 'PurchaseOrderItems']);
             if ($this->PurchaseOrders->save($purchaseOrder)) {
                 $this->Flash->success(__('The purchase order has been saved.'));
 
@@ -60,7 +65,9 @@ class PurchaseOrdersController extends AdminController
             }
             $this->Flash->error(__('The purchase order could not be saved. Please, try again.'));
         }
-        $this->set(compact('purchaseOrder'));
+        $employees = $this->PurchaseOrders->Employees->find('list', ['limit' => 200]);
+        $vendors   = $this->PurchaseOrders->Vendors->find('list', ['limit' => 200]);
+        $this->set(compact('purchaseOrder', 'employees', 'vendors'));
         $this->set('_serialize', ['purchaseOrder']);
     }
 
@@ -68,16 +75,17 @@ class PurchaseOrdersController extends AdminController
      * Edit method
      *
      * @param string|null $id Purchase Order id.
+     *
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
         $purchaseOrder = $this->PurchaseOrders->get($id, [
-            'contain' => []
+            'contain' => ['PurchaseOrderItems'],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $purchaseOrder = $this->PurchaseOrders->patchEntity($purchaseOrder, $this->request->getData());
+            $purchaseOrder = $this->PurchaseOrders->patchEntity($purchaseOrder, $this->request->getData(), ['associated' => 'PurchaseOrderItems']);
             if ($this->PurchaseOrders->save($purchaseOrder)) {
                 $this->Flash->success(__('The purchase order has been saved.'));
 
@@ -85,7 +93,9 @@ class PurchaseOrdersController extends AdminController
             }
             $this->Flash->error(__('The purchase order could not be saved. Please, try again.'));
         }
-        $this->set(compact('purchaseOrder'));
+        $employees = $this->PurchaseOrders->Employees->find('list', ['limit' => 200]);
+        $vendors   = $this->PurchaseOrders->Vendors->find('list', ['limit' => 200]);
+        $this->set(compact('purchaseOrder', 'employees', 'vendors'));
         $this->set('_serialize', ['purchaseOrder']);
         $this->render('add');
     }
@@ -94,12 +104,13 @@ class PurchaseOrdersController extends AdminController
      * Delete method
      *
      * @param string|null $id Purchase Order id.
+     *
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
     {
-//        $this->request->allowMethod(['post', 'delete']);
+        // $this->request->allowMethod(['post', 'delete']);
         $purchaseOrder = $this->PurchaseOrders->get($id);
         if ($this->PurchaseOrders->delete($purchaseOrder)) {
             $this->Flash->success(__('The purchase order has been deleted.'));

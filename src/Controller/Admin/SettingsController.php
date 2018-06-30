@@ -118,7 +118,7 @@ class SettingsController extends AdminController {
         }
 
         if ($this->request->is('post')) {
-            foreach ($this->request->data as $item) {
+            foreach ($this->request->getData() as $item) {
                 if (!empty($vars['fields'][$item['setting_key']]['behavior'])) {
                     $behavior = $vars['fields'][$item['setting_key']]['behavior'];
                     $this->Settings->addBehavior($behavior['name'], ['setting_value' => $behavior['settings']]);
@@ -139,7 +139,7 @@ class SettingsController extends AdminController {
                     foreach ($setting->errors('setting_value') as $key => $error) {
                         $errors[$setting->setting_key] = __($error);
                     }
-                   
+
                 }
             }
             if (empty($errors)) {

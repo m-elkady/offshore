@@ -1,7 +1,9 @@
 <?php
+
 namespace App\Controller\Admin;
 
 use App\Controller\AdminController;
+
 
 /**
  * EebdCertificates Controller
@@ -30,13 +32,14 @@ class EebdCertificatesController extends AdminController
      * View method
      *
      * @param string|null $id Eebd Certificate id.
+     *
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
         $eebdCertificate = $this->EebdCertificates->get($id, [
-            'contain' => []
+            'contain' => ['EebdCertificateItems'],
         ]);
 
         $this->set('eebdCertificate', $eebdCertificate);
@@ -52,7 +55,8 @@ class EebdCertificatesController extends AdminController
     {
         $eebdCertificate = $this->EebdCertificates->newEntity();
         if ($this->request->is('post')) {
-            $eebdCertificate = $this->EebdCertificates->patchEntity($eebdCertificate, $this->request->getData());
+            $eebdCertificate = $this->EebdCertificates->patchEntity($eebdCertificate, $this->request->getData()
+                , ['associated' => ['EebdCertificateItems']]);
             if ($this->EebdCertificates->save($eebdCertificate)) {
                 $this->Flash->success(__('The eebd certificate has been saved.'));
 
@@ -60,7 +64,8 @@ class EebdCertificatesController extends AdminController
             }
             $this->Flash->error(__('The eebd certificate could not be saved. Please, try again.'));
         }
-        $this->set(compact('eebdCertificate'));
+        $statuses      = $this->EebdCertificates->EebdCertificateItems->statuses;
+        $this->set(compact('eebdCertificate','statuses'));
         $this->set('_serialize', ['eebdCertificate']);
     }
 
@@ -68,16 +73,20 @@ class EebdCertificatesController extends AdminController
      * Edit method
      *
      * @param string|null $id Eebd Certificate id.
+     *
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
         $eebdCertificate = $this->EebdCertificates->get($id, [
-            'contain' => []
+            'contain' => ['EebdCertificateItems'],
         ]);
+
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $eebdCertificate = $this->EebdCertificates->patchEntity($eebdCertificate, $this->request->getData());
+            $eebdCertificate = $this->EebdCertificates->patchEntity($eebdCertificate, $this->request->getData()
+                , ['associated' => ['EebdCertificateItems']]);
+
             if ($this->EebdCertificates->save($eebdCertificate)) {
                 $this->Flash->success(__('The eebd certificate has been saved.'));
 
@@ -85,7 +94,9 @@ class EebdCertificatesController extends AdminController
             }
             $this->Flash->error(__('The eebd certificate could not be saved. Please, try again.'));
         }
-        $this->set(compact('eebdCertificate'));
+        $statuses      = $this->EebdCertificates->EebdCertificateItems->statuses;
+
+        $this->set(compact('eebdCertificate','statuses'));
         $this->set('_serialize', ['eebdCertificate']);
         $this->render('add');
     }
@@ -94,12 +105,13 @@ class EebdCertificatesController extends AdminController
      * Delete method
      *
      * @param string|null $id Eebd Certificate id.
+     *
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
     {
-//        $this->request->allowMethod(['post', 'delete']);
+        // $this->request->allowMethod(['post', 'delete']);
         $eebdCertificate = $this->EebdCertificates->get($id);
         if ($this->EebdCertificates->delete($eebdCertificate)) {
             $this->Flash->success(__('The eebd certificate has been deleted.'));

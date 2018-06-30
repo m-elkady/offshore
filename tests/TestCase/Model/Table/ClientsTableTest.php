@@ -24,7 +24,9 @@ class ClientsTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.clients'
+        'app.clients',
+        'app.quotations',
+        'app.certification_items'
     ];
 
     /**
@@ -35,7 +37,7 @@ class ClientsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Clients') ? [] : ['className' => 'App\Model\Table\ClientsTable'];
+        $config = TableRegistry::exists('Clients') ? [] : ['className' => ClientsTable::class];
         $this->Clients = TableRegistry::get('Clients', $config);
     }
 

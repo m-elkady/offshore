@@ -68,7 +68,7 @@ $this->assign('title', $title_for_layout);
                         echo $this->Flash->render();
                         $this->Form->templates(['inputContainer' => '{{content}}']);
                         ?>
-                        <?php echo $this->Form->create('Users', ['url' => '/admin', 'class' => 'form-horizontal ls_form', 'id' => 'form-login']); ?>
+                        <?php echo $this->Form->create('Users', ['class' => 'form-horizontal ls_form', 'id' => 'form-login']); ?>
                         <!--<form id="form-login" action="<?php echo $this->Url->build() ?>" class="form-horizontal ls_form">-->
                         <div class="input-group ls-group-input">
                             <?php echo $this->Form->input('username', ['label' => false, 'class' => 'form-control', 'placeholder' => __('Username', true)]) ?>

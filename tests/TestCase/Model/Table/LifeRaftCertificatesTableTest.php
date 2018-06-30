@@ -24,7 +24,11 @@ class LifeRaftCertificatesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.life_raft_certificates'
+        'app.life_raft_certificates',
+        'app.clients',
+        'app.quotations',
+        'app.employees',
+        'app.quotation_items'
     ];
 
     /**
@@ -67,6 +71,16 @@ class LifeRaftCertificatesTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

@@ -24,7 +24,8 @@ class EebdCertificatesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.eebd_certificates'
+        'app.eebd_certificates',
+        'app.eebd_certificate_items'
     ];
 
     /**

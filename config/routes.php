@@ -43,13 +43,11 @@ use Cake\Core\Configure;
  */
 Router::defaultRouteClass('DashedRoute');
 Router::scope('/admin', ['prefix' => 'admin'], function (RouteBuilder $routes) {
-
-    $routes->connect('/:controller/', []);
     $routes->fallbacks('DashedRoute');
 });
 
 Router::scope('/api', ['prefix' => 'api'], function (RouteBuilder $routes) {
-    $routes->extensions(['json']);
+    $routes->setExtensions(['json']);
     $routes->resources('drivers');
     $routes->connect('/:controller/', []);
     $routes->fallbacks('DashedRoute');
@@ -59,7 +57,7 @@ Router::scope('/api', ['prefix' => 'api'], function (RouteBuilder $routes) {
 
 Router::scope('/', function (RouteBuilder $routes) {
 
-    $routes->extensions(['json']);
+    $routes->setExtensions(['json']);
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file

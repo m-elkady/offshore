@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \App\View\AppView              $this
+ * @var \App\View\AppView $this
  * @var \App\Model\Entity\DeliveryNote $deliveryNote
  */
 ?>
@@ -20,15 +20,15 @@
 
                 <?= $this->Form->create($deliveryNote) ?>
                 <?php
-                echo $this->Form->control('serial_no');
-                echo $this->Form->control('date_of_issue');
-                echo $this->Form->control('client_name');
-                echo $this->Form->control('contact_person');
-                echo $this->Form->control('phone_number');
-                ?>
+                                            echo $this->Form->control('quotation_id', ['options' => $quotations]);
+                                                        echo $this->Form->control('client_id', ['options' => $clients]);
+                                                        echo $this->Form->control('dispatch_date', ['empty' => true]);
+                                                        echo $this->Form->control('delivery_method');
+                                                        echo $this->Form->control('notes');
+                                            ?>
 
-                <?= $this->Form->button(__('Submit')) ?>
-                <?= $this->Form->end() ?>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
             </div>
         </div>
     </div>

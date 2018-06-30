@@ -5,31 +5,31 @@
  */
 ?>
 <div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php
-                    if (!$purchaseOrder->id) {
-                        echo __('Add Purchase Order');
-                    } else {
-                        echo __('Edit Purchase Order');
-                    }
-                    ?></h3>
-            </div>
-            <div class="panel-body">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><?php
+            if (!$purchaseOrder->id) {
+                echo __('Add Purchase Order');
+            } else {
+                echo __('Edit Purchase Order');
+            }
+            ?></h3>
+      </div>
+      <div class="panel-body">
 
-                <?= $this->Form->create($purchaseOrder) ?>
-                <?php
-                echo $this->Form->control('serial_no');
-                echo $this->Form->control('date_of_issue');
-                echo $this->Form->control('client_name');
-                echo $this->Form->control('contact_person');
-                echo $this->Form->control('phone_number');
-                ?>
+          <?= $this->Form->create($purchaseOrder) ?>
+          <?php
+          echo $this->Form->control('employee_id', ['options' => $employees, 'empty' => true]);
+          echo $this->Form->control('vendor_id', ['options' => $vendors]);
+          echo $this->Form->control('terms_conditions');
+          echo $this->Form->control('discount');
+          echo $this->Form->control('notes');
+          ?>
 
-                <?= $this->Form->button(__('Submit')) ?>
-                <?= $this->Form->end() ?>
-            </div>
-        </div>
+          <?= $this->Form->button(__('Submit')) ?>
+          <?= $this->Form->end() ?>
+      </div>
     </div>
+  </div>
 </div>

@@ -49,3 +49,449 @@ Stack Trace:
 #12 {main}
 
 
+2017-11-16 12:50:26 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php on line 47
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Connection.php(368): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Connection.php(387): Cake\Database\Connection->getSchemaCollection()
+#8 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(1030): Cake\Database\Connection->schemaCollection()
+#9 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(982): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(997): Bake\Shell\Task\ModelTask->listAll()
+#11 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(93): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main()
+#13 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#14 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2018-02-18 13:59:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'serial_no'; check that column/key exists in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(495): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(551): Phinx\Db\Adapter\MysqlAdapter->dropColumn('quotations', 'serial_no')
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(370): Migrations\CakeAdapter->dropColumn('quotations', 'serial_no')
+#4 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(18): Phinx\Db\Table->removeColumn('serial_no')
+#5 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2018-02-18 13:59:45 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 13:59:45 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:00:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'serial_no'; check that column/key exists in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(495): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(551): Phinx\Db\Adapter\MysqlAdapter->dropColumn('quotations', 'serial_no')
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(370): Migrations\CakeAdapter->dropColumn('quotations', 'serial_no')
+#4 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(18): Phinx\Db\Table->removeColumn('serial_no')
+#5 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2018-02-18 14:00:47 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:00:47 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:01:25 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'fire_extinguisher_certificates' already exists in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('CREATE TABLE `f...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(306): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `f...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(444): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Migrations\Table))
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(609): Migrations\CakeAdapter->createTable(Object(Migrations\Table))
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Table.php(89): Phinx\Db\Table->create()
+#5 /Users/mohammedelkady/public_html/ships/config/Migrations/20171015181145_CreateFireExtinguisher.php(38): Migrations\Table->create()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): CreateFireExtinguisher->change()
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateFireExtinguisher), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(CreateFireExtinguisher), 'up')
+#9 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2018-02-18 14:01:25 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:01:25 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:01:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(695): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(636): Phinx\Db\Adapter\MysqlAdapter->addForeignKey(Object(Migrations\Table), Object(Phinx\Db\Table\ForeignKey))
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(636): Migrations\CakeAdapter->addForeignKey(Object(Migrations\Table), Object(Phinx\Db\Table\ForeignKey))
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Table.php(105): Phinx\Db\Table->update()
+#5 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(46): Migrations\Table->update()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#9 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2018-02-18 14:01:57 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:01:57 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:03:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'date_of_issue'; check that column/key exists in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(495): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(551): Phinx\Db\Adapter\MysqlAdapter->dropColumn('quotations', 'date_of_issue')
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(370): Migrations\CakeAdapter->dropColumn('quotations', 'date_of_issue')
+#4 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(18): Phinx\Db\Table->removeColumn('date_of_issue')
+#5 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
+2018-02-18 14:03:02 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:03:02 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:03:37 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'client_id' in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(422): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(513): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(628): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Table.php(105): Phinx\Db\Table->update()
+#5 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(41): Migrations\Table->update()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#9 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2018-02-18 14:03:37 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:03:37 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:03:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint in /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `qu...')
+#1 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(695): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `qu...')
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/CakeAdapter.php(636): Phinx\Db\Adapter\MysqlAdapter->addForeignKey(Object(Migrations\Table), Object(Phinx\Db\Table\ForeignKey))
+#3 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(636): Migrations\CakeAdapter->addForeignKey(Object(Migrations\Table), Object(Phinx\Db\Table\ForeignKey))
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Table.php(105): Phinx\Db\Table->update()
+#5 /Users/mohammedelkady/public_html/ships/config/Migrations/20180218114433_AlterQuotations.php(41): Migrations\Table->update()
+#6 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(122): AlterQuotations->change()
+#7 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(AlterQuotations), 'up')
+#8 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(AlterQuotations), 'up')
+#9 /Users/mohammedelkady/public_html/ships/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20180218115034)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Command/Command.php(240): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(860): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(218): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/mohammedelkady/public_html/ships/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2018-02-18 14:03:59 Warning: The connection is going to be closed but there is an active transaction.
+2018-02-18 14:03:59 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [/Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2018-02-18 14:29:03 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE) in /Users/mohammedelkady/public_html/ships/src/Model/Table/QuotationsTable.php on line 40
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Users/mohammed...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Model\\Table...')
+#4 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Qu...', 'App')
+#5 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php(238): Cake\Core\App::className('Quotations', 'Model/Table', 'Table')
+#6 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Quotations', Array)
+#7 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('Quotations', Array)
+#8 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(195): Cake\ORM\TableRegistry::get('Quotations', Array)
+#9 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(414): Bake\Shell\Task\ModelTask->getTableObject('Quotations', 'quotations')
+#10 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(231): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#11 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'certification_i...', 'CertificationIt...')
+#13 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('CertificationIt...')
+#14 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('certification_i...')
+#15 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#17 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#18 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#19 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#20 {main}
+
+
+2018-02-21 21:27:30 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serve" could not be found. in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Serve',
+)
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Serve')
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2018-04-21 18:35:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ships.purshase_orders' doesn't exist in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'purshase_orders', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('purshase_orders', Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('purshase_orders')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'purshase_orders', 'PurshaseOrders')
+#7 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('PurshaseOrders')
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('purshase_orders')
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2018-04-21 18:37:48 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ships.purshase_orders' doesn't exist in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'purshase_orders', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('purshase_orders', Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('purshase_orders')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'purshase_orders', 'PurshaseOrders')
+#7 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('PurshaseOrders')
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('purshase_orders')
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2018-04-21 21:27:02 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ships.fire_exinguisher_certificate_items' doesn't exist in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'fire_exinguishe...', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('fire_exinguishe...', Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('fire_exinguishe...')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'fire_exinguishe...', 'FireExinguisher...')
+#7 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('FireExinguisher...')
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('fire_exinguishe...')
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2018-05-01 17:26:35 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ships.eebd_certificates_items' doesn't exist in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'eebd_certificat...', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('eebd_certificat...', Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('eebd_certificat...')
+#3 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'eebd_certificat...', 'EebdCertificate...')
+#7 /Users/mohammedelkady/public_html/ships/vendor/m-elkady/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('EebdCertificate...')
+#8 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('eebd_certificat...')
+#9 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2018-06-05 00:58:45 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Model" could not be found. in /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Model',
+)
+Stack Trace:
+#0 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Model')
+#1 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Users/mohammedelkady/public_html/ships/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Users/mohammedelkady/public_html/ships/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

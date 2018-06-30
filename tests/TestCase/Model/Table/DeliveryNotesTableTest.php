@@ -24,7 +24,12 @@ class DeliveryNotesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.delivery_notes'
+        'app.delivery_notes',
+        'app.quotations',
+        'app.clients',
+        'app.employees',
+        'app.quotation_items',
+        'app.delivery_note_items'
     ];
 
     /**
@@ -67,6 +72,16 @@ class DeliveryNotesTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

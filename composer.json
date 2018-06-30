@@ -1,47 +1,54 @@
 {
-    "name": "cakephp/app",
-    "description": "CakePHP skeleton app",
-    "homepage": "http://cakephp.org",
-    "type": "project",
-    "license": "MIT",
-    "require": {
-        "php": ">=5.5.9",
-        "cakephp/cakephp": "~3.5",
-        "mobiledetect/mobiledetectlib": "2.*",
-        "cakephp/migrations": "^1.0",
-        "cakephp/plugin-installer": "*",
-        "intervention/image": "^2.3",
-        "eventviva/php-image-resize": "1.5.*",
-        "admad/cakephp-jwt-auth": "^2.0",
-        "josegonzalez/dotenv": "2.1",
-        "justinrainbow/json-schema": "^4.1"
-    },
-    "require-dev": {
-        "cakephp/bake": "1.4.4",
-        "cakephp/cakephp-codesniffer": "^3.0",
-        "cakephp/debug_kit": "^3.2",
-        "psy/psysh": "@stable"
-    },
-    "suggest": {
-        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
-        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "src"            
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Test\\": "tests",
-            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
-        }
-    },
-    "scripts": {
-        "post-install-cmd": "App\\Console\\Installer::postInstall",
-        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
-        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+  "name": "cakephp/app",
+  "description": "CakePHP skeleton app",
+  "homepage": "http://cakephp.org",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.9",
+    "cakephp/cakephp": "~3.5",
+    "mobiledetect/mobiledetectlib": "2.*",
+    "cakephp/migrations": "^1.0",
+    "cakephp/plugin-installer": "*",
+    "intervention/image": "^2.3",
+    "eventviva/php-image-resize": "1.5.*",
+    "admad/cakephp-jwt-auth": "^2.0",
+    "josegonzalez/dotenv": "2.1",
+    "justinrainbow/json-schema": "^4.1",
+    "cakephp/chronos": "@stable"
+  },
+  "require-dev": {
+    "m-elkady/bake": "dev-master",
+    "cakephp/cakephp-codesniffer": "^3.0",
+    "cakephp/debug_kit": "^3.2",
+    "psy/psysh": "@stable"
+  },
+  "repositories": [
+    {
+      "url": "https://github.com/m-elkady/bake.git",
+      "type": "git"
+    }
+  ],
+  "suggest": {
+    "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+    "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "App\\Console\\Installer::postInstall",
+    "post-create-project-cmd": "App\\Console\\Installer::postInstall",
+    "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

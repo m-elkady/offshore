@@ -9,6 +9,10 @@ use Cake\Validation\Validator;
 /**
  * DeliveryNotes Model
  *
+ * @property \App\Model\Table\QuotationsTable|\Cake\ORM\Association\BelongsTo $Quotations
+ * @property \App\Model\Table\ClientsTable|\Cake\ORM\Association\BelongsTo $Clients
+ * @property \App\Model\Table\DeliveryNoteItemsTable|\Cake\ORM\Association\HasMany $DeliveryNoteItems
+ *
  * @method \App\Model\Entity\DeliveryNote get($primaryKey, $options = [])
  * @method \App\Model\Entity\DeliveryNote newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\DeliveryNote[] newEntities(array $data, array $options = [])
@@ -37,6 +41,18 @@ class DeliveryNotesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Quotations', [
+            'foreignKey' => 'quotation_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Clients', [
+            'foreignKey' => 'client_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->hasMany('DeliveryNoteItems', [
+            'foreignKey' => 'delivery_note_id'
+        ]);
     }
 
     /**
@@ -52,30 +68,32 @@ class DeliveryNotesTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('serial_no')
-            ->requirePresence('serial_no', 'create')
-            ->notEmpty('serial_no');
+            ->date('dispatch_date')
+            ->allowEmpty('dispatch_date');
 
         $validator
-            ->dateTime('date_of_issue')
-            ->requirePresence('date_of_issue', 'create')
-            ->notEmpty('date_of_issue');
+            ->scalar('delivery_method')
+            ->allowEmpty('delivery_method');
 
         $validator
-            ->scalar('client_name')
-            ->requirePresence('client_name', 'create')
-            ->notEmpty('client_name');
-
-        $validator
-            ->scalar('contact_person')
-            ->requirePresence('contact_person', 'create')
-            ->notEmpty('contact_person');
-
-        $validator
-            ->scalar('phone_number')
-            ->requirePresence('phone_number', 'create')
-            ->notEmpty('phone_number');
+            ->scalar('notes')
+            ->allowEmpty('notes');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['quotation_id'], 'Quotations'));
+        $rules->add($rules->existsIn(['client_id'], 'Clients'));
+
+        return $rules;
     }
 }

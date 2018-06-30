@@ -7,11 +7,16 @@ use Cake\ORM\Entity;
  * EebdCertificate Entity
  *
  * @property int $id
- * @property string $serial_no
- * @property \Cake\I18n\FrozenTime $date_of_issue
+ * @property string $certificate_number
  * @property string $vessel_name
+ * @property string $certificate_text
+ * @property \Cake\I18n\FrozenDate $inspection_date
+ * @property \Cake\I18n\FrozenDate $next_inspection_date
+ * @property \Cake\I18n\FrozenTime $next_hydro_test
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\EebdCertificateItem[] $eebd_certificate_items
  */
 class EebdCertificate extends Entity
 {
@@ -26,10 +31,14 @@ class EebdCertificate extends Entity
      * @var array
      */
     protected $_accessible = [
-        'serial_no' => true,
-        'date_of_issue' => true,
+        'certificate_number' => true,
         'vessel_name' => true,
+        'certificate_text' => true,
+        'inspection_date' => true,
+        'next_inspection_date' => true,
+        'next_hydro_test' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'eebd_certificate_items' => true
     ];
 }

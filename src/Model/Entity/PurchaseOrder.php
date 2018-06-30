@@ -7,13 +7,16 @@ use Cake\ORM\Entity;
  * PurchaseOrder Entity
  *
  * @property int $id
- * @property string $serial_no
- * @property \Cake\I18n\FrozenTime $date_of_issue
- * @property string $client_name
- * @property string $contact_person
- * @property string $phone_number
+ * @property int $employee_id
+ * @property int $vendor_id
+ * @property string $terms_conditions
+ * @property int $discount
+ * @property string $notes
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\Employee $employee
+ * @property \App\Model\Entity\Vendor $vendor
  */
 class PurchaseOrder extends Entity
 {
@@ -28,12 +31,15 @@ class PurchaseOrder extends Entity
      * @var array
      */
     protected $_accessible = [
-        'serial_no' => true,
-        'date_of_issue' => true,
-        'client_name' => true,
-        'contact_person' => true,
-        'phone_number' => true,
+        'employee_id' => true,
+        'vendor_id' => true,
+        'terms_conditions' => true,
+        'discount' => true,
+        'notes' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'employee' => true,
+        'vendor' => true,
+        'purchase_order_items'=>true,
     ];
 }

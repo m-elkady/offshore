@@ -20,6 +20,9 @@ class LifeRaftCertificatesController extends AdminController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Clients']
+        ];
         $lifeRaftCertificates = $this->paginate($this->LifeRaftCertificates);
 
         $this->set(compact('lifeRaftCertificates'));
@@ -36,7 +39,7 @@ class LifeRaftCertificatesController extends AdminController
     public function view($id = null)
     {
         $lifeRaftCertificate = $this->LifeRaftCertificates->get($id, [
-            'contain' => []
+            'contain' => ['Clients']
         ]);
 
         $this->set('lifeRaftCertificate', $lifeRaftCertificate);
@@ -60,7 +63,8 @@ class LifeRaftCertificatesController extends AdminController
             }
             $this->Flash->error(__('The life raft certificate could not be saved. Please, try again.'));
         }
-        $this->set(compact('lifeRaftCertificate'));
+        $clients = $this->LifeRaftCertificates->Clients->find('list', ['limit' => 200]);
+        $this->set(compact('lifeRaftCertificate', 'clients'));
         $this->set('_serialize', ['lifeRaftCertificate']);
     }
 
@@ -85,7 +89,8 @@ class LifeRaftCertificatesController extends AdminController
             }
             $this->Flash->error(__('The life raft certificate could not be saved. Please, try again.'));
         }
-        $this->set(compact('lifeRaftCertificate'));
+        $clients = $this->LifeRaftCertificates->Clients->find('list', ['limit' => 200]);
+        $this->set(compact('lifeRaftCertificate', 'clients'));
         $this->set('_serialize', ['lifeRaftCertificate']);
         $this->render('add');
     }
@@ -99,7 +104,7 @@ class LifeRaftCertificatesController extends AdminController
      */
     public function delete($id = null)
     {
-//        $this->request->allowMethod(['post', 'delete']);
+      // $this->request->allowMethod(['post', 'delete']);
         $lifeRaftCertificate = $this->LifeRaftCertificates->get($id);
         if ($this->LifeRaftCertificates->delete($lifeRaftCertificate)) {
             $this->Flash->success(__('The life raft certificate has been deleted.'));

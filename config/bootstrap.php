@@ -50,7 +50,6 @@ require CORE_PATH . 'config' . DS . 'bootstrap.php';
 
 use Cake\Cache\Cache;
 use Cake\Console\ConsoleErrorHandler;
-use Cake\Core\App;
 use Cake\Core\Configure;
 use Cake\Core\Configure\Engine\PhpConfig;
 use Cake\Core\Plugin;
@@ -61,7 +60,6 @@ use Cake\Log\Log;
 use Cake\Mailer\Email;
 use Cake\Network\Request;
 use Cake\Routing\DispatcherFactory;
-use Cake\Utility\Inflector;
 use Cake\Utility\Security;
 
 /**
@@ -143,12 +141,12 @@ if (!Configure::read('App.fullBaseUrl')) {
     unset($httpHost, $s);
 }
 
-Cache::config(Configure::consume('Cache'));
-ConnectionManager::config(Configure::consume('Datasources'));
-Email::configTransport(Configure::consume('EmailTransport'));
-Email::config(Configure::consume('Email'));
-Log::config(Configure::consume('Log'));
-Security::salt(Configure::consume('Security.salt'));
+Cache::setConfig(Configure::consume('Cache'));
+ConnectionManager::setConfig(Configure::consume('Datasources'));
+Email::setConfigTransport(Configure::consume('EmailTransport'));
+Email::setConfig(Configure::consume('Email'));
+Log::setConfig(Configure::consume('Log'));
+Security::setSalt(Configure::consume('Security.salt'));
 
 /**
  * The default crypto extension in 3.0 is OpenSSL.
@@ -220,26 +218,28 @@ Type::build('date')
 Type::build('datetime')
     ->useImmutable();
 
-//Plugin::load('Proffer');
-//\Cake\Event\EventManager::instance()->on(new \App\Event\UploadFilenameListener());
-
 if (isset($_GET['debug'])) {
-    $pp                = ROOT . DS . '.env';
-    $_SESSION['debug'] = $_GET['debug'];
+    $envFilePath = ROOT . DS . '.env';
+    if (file_exists($envFilePath)) {
+        $env = env('DEBUG');
+        if ($env != $_GET['debug']) {
+            file_put_contents($envFilePath, preg_replace(
+                "/DEBUG\=.*/", 'DEBUG="' . $_GET['debug'].'"', file_get_contents($envFilePath)
+            ));
+            $currentPath = (new Request())->getUri()->getPath();
+            return (new \Cake\Network\Response())->withLocation($currentPath)->getHeaderLine('Location');
+        }
 
-//    if (file_exists($pp)) {
-//        file_put_contents($pp, preg_replace(
-//            '/DEBUG\=.*/', 'DEBUG=' . $_GET['debug'], file_get_contents($pp)
-//        ));
-//    }
+    }
 }
+
 if (isset($_SESSION['debug'])) {
     Configure::write('debug', $_SESSION['debug']);
 }
 
-if (Configure::read('debug')) {
-    Plugin::load('DebugKit', ['bootstrap' => true, 'routes' => true]);
-}
+
+Plugin::load('DebugKit', ['bootstrap' => true, 'routes' => true]);
+
 define('PHONE_LENGHT', 11);
 
 function resizeOnFly($image, $width, $height, $crop, $path)

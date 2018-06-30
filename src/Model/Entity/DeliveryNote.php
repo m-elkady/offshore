@@ -7,13 +7,17 @@ use Cake\ORM\Entity;
  * DeliveryNote Entity
  *
  * @property int $id
- * @property string $serial_no
- * @property \Cake\I18n\FrozenTime $date_of_issue
- * @property string $client_name
- * @property string $contact_person
- * @property string $phone_number
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property int $quotation_id
+ * @property int $client_id
+ * @property \Cake\I18n\FrozenDate $dispatch_date
+ * @property string $delivery_method
+ * @property string $notes
+ *
+ * @property \App\Model\Entity\Quotation $quotation
+ * @property \App\Model\Entity\Client $client
+ * @property \App\Model\Entity\DeliveryNoteItem[] $delivery_note_items
  */
 class DeliveryNote extends Entity
 {
@@ -28,12 +32,15 @@ class DeliveryNote extends Entity
      * @var array
      */
     protected $_accessible = [
-        'serial_no' => true,
-        'date_of_issue' => true,
-        'client_name' => true,
-        'contact_person' => true,
-        'phone_number' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'quotation_id' => true,
+        'client_id' => true,
+        'dispatch_date' => true,
+        'delivery_method' => true,
+        'notes' => true,
+        'quotation' => true,
+        'client' => true,
+        'delivery_note_items' => true
     ];
 }

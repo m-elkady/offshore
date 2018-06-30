@@ -7,13 +7,17 @@ use Cake\ORM\Entity;
  * Quotation Entity
  *
  * @property int $id
- * @property string $serial_no
- * @property \Cake\I18n\FrozenTime $date_of_issue
- * @property string $client_name
- * @property string $contact_person
- * @property string $phone_number
+ * @property int $client_id
+ * @property int $employee_id
+ * @property string $terms_conditions
+ * @property string $notes
+ * @property float $discount
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ *
+ * @property \App\Model\Entity\QuotationItem[] $quotation_items
+ * @property \App\Model\Entity\Client $client
+ * @property \App\Model\Entity\Employee $employee
  */
 class Quotation extends Entity
 {
@@ -28,12 +32,15 @@ class Quotation extends Entity
      * @var array
      */
     protected $_accessible = [
-        'serial_no' => true,
-        'date_of_issue' => true,
-        'client_name' => true,
-        'contact_person' => true,
-        'phone_number' => true,
+        'client_id' => true,
+        'employee_id' => true,
+        'terms_conditions' => true,
+        'notes' => true,
+        'discount' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'quotation_items' => true,
+        'client' => true,
+        'employee' => true
     ];
 }

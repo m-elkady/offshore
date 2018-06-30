@@ -20,6 +20,9 @@ class DeliveryNotesController extends AdminController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Quotations', 'Clients']
+        ];
         $deliveryNotes = $this->paginate($this->DeliveryNotes);
 
         $this->set(compact('deliveryNotes'));
@@ -36,7 +39,7 @@ class DeliveryNotesController extends AdminController
     public function view($id = null)
     {
         $deliveryNote = $this->DeliveryNotes->get($id, [
-            'contain' => []
+            'contain' => ['Quotations', 'Clients', 'DeliveryNoteItems']
         ]);
 
         $this->set('deliveryNote', $deliveryNote);
@@ -60,7 +63,9 @@ class DeliveryNotesController extends AdminController
             }
             $this->Flash->error(__('The delivery note could not be saved. Please, try again.'));
         }
-        $this->set(compact('deliveryNote'));
+        $quotations = $this->DeliveryNotes->Quotations->find('list', ['limit' => 200]);
+        $clients = $this->DeliveryNotes->Clients->find('list', ['limit' => 200]);
+        $this->set(compact('deliveryNote', 'quotations', 'clients'));
         $this->set('_serialize', ['deliveryNote']);
     }
 
@@ -74,7 +79,7 @@ class DeliveryNotesController extends AdminController
     public function edit($id = null)
     {
         $deliveryNote = $this->DeliveryNotes->get($id, [
-            'contain' => []
+            'contain' => ['DeliveryNoteItems']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $deliveryNote = $this->DeliveryNotes->patchEntity($deliveryNote, $this->request->getData());
@@ -85,7 +90,9 @@ class DeliveryNotesController extends AdminController
             }
             $this->Flash->error(__('The delivery note could not be saved. Please, try again.'));
         }
-        $this->set(compact('deliveryNote'));
+        $quotations = $this->DeliveryNotes->Quotations->find('list', ['limit' => 200]);
+        $clients = $this->DeliveryNotes->Clients->find('list', ['limit' => 200]);
+        $this->set(compact('deliveryNote', 'quotations', 'clients'));
         $this->set('_serialize', ['deliveryNote']);
         $this->render('add');
     }
@@ -99,7 +106,7 @@ class DeliveryNotesController extends AdminController
      */
     public function delete($id = null)
     {
-//        $this->request->allowMethod(['post', 'delete']);
+      // $this->request->allowMethod(['post', 'delete']);
         $deliveryNote = $this->DeliveryNotes->get($id);
         if ($this->DeliveryNotes->delete($deliveryNote)) {
             $this->Flash->success(__('The delivery note has been deleted.'));

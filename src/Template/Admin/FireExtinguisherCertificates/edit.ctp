@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \App\View\AppView                             $this
+ * @var \App\View\AppView $this
  * @var \App\Model\Entity\FireExtinguisherCertificate $fireExtinguisherCertificate
  */
 ?>
@@ -20,13 +20,15 @@
 
                 <?= $this->Form->create($fireExtinguisherCertificate) ?>
                 <?php
-                echo $this->Form->control('serial_no');
-                echo $this->Form->control('date_of_issue');
-                echo $this->Form->control('vessel_name');
-                ?>
+                                            echo $this->Form->control('certificate_number');
+                                                        echo $this->Form->control('vessel_name');
+                                                        echo $this->Form->control('certificate_text');
+                                                        echo $this->Form->control('inspection_date', ['empty' => true]);
+                                                        echo $this->Form->control('next_inspection_date', ['empty' => true]);
+                                            ?>
 
-                <?= $this->Form->button(__('Submit')) ?>
-                <?= $this->Form->end() ?>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
             </div>
         </div>
     </div>

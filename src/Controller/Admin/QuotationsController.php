@@ -1,7 +1,10 @@
 <?php
+
 namespace App\Controller\Admin;
 
 use App\Controller\AdminController;
+use App\Model\Table\QuotationItemsTable;
+use Cake\ORM\TableRegistry;
 
 /**
  * Quotations Controller
@@ -20,6 +23,10 @@ class QuotationsController extends AdminController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Employees', 'Clients'],
+        ];
+
         $quotations = $this->paginate($this->Quotations);
 
         $this->set(compact('quotations'));
@@ -30,13 +37,14 @@ class QuotationsController extends AdminController
      * View method
      *
      * @param string|null $id Quotation id.
+     *
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
         $quotation = $this->Quotations->get($id, [
-            'contain' => []
+            'contain' => [],
         ]);
 
         $this->set('quotation', $quotation);
@@ -52,7 +60,8 @@ class QuotationsController extends AdminController
     {
         $quotation = $this->Quotations->newEntity();
         if ($this->request->is('post')) {
-            $quotation = $this->Quotations->patchEntity($quotation, $this->request->getData());
+            $quotation = $this->Quotations->patchEntity($quotation, $this->request->getData(), ['associated' => 'QuotationItems']);
+
             if ($this->Quotations->save($quotation)) {
                 $this->Flash->success(__('The quotation has been saved.'));
 
@@ -60,7 +69,10 @@ class QuotationsController extends AdminController
             }
             $this->Flash->error(__('The quotation could not be saved. Please, try again.'));
         }
-        $this->set(compact('quotation'));
+
+        $clients   = TableRegistry::get('Clients')->find('list');
+        $employees = TableRegistry::get('Employees')->find('list');
+        $this->set(compact('quotation', 'clients', 'employees'));
         $this->set('_serialize', ['quotation']);
     }
 
@@ -68,16 +80,17 @@ class QuotationsController extends AdminController
      * Edit method
      *
      * @param string|null $id Quotation id.
+     *
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
         $quotation = $this->Quotations->get($id, [
-            'contain' => []
+            'contain' => ['QuotationItems'],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $quotation = $this->Quotations->patchEntity($quotation, $this->request->getData());
+            $quotation = $this->Quotations->patchEntity($quotation, $this->request->getData(), ['associated' => 'QuotationItems', 'checkRules' => false]);
             if ($this->Quotations->save($quotation)) {
                 $this->Flash->success(__('The quotation has been saved.'));
 
@@ -85,7 +98,9 @@ class QuotationsController extends AdminController
             }
             $this->Flash->error(__('The quotation could not be saved. Please, try again.'));
         }
-        $this->set(compact('quotation'));
+        $clients   = TableRegistry::get('Clients')->find('list');
+        $employees = TableRegistry::get('Employees')->find('list');
+        $this->set(compact('quotation', 'clients', 'employees'));
         $this->set('_serialize', ['quotation']);
         $this->render('add');
     }
@@ -94,6 +109,7 @@ class QuotationsController extends AdminController
      * Delete method
      *
      * @param string|null $id Quotation id.
+     *
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
@@ -108,5 +124,12 @@ class QuotationsController extends AdminController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function issue($id = null, $type = 'html')
+    {
+        $this->viewBuilder()->setLayout(null);
+        $quotation = $this->Quotations->get($id,['contain' => ['CertificationItems','Employees','Clients']]);
+        $this->set(compact('quotation'));
     }
 }

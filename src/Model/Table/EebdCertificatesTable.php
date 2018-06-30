@@ -1,6 +1,7 @@
 <?php
 namespace App\Model\Table;
 
+use Cake\Event\Event;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -8,6 +9,8 @@ use Cake\Validation\Validator;
 
 /**
  * EebdCertificates Model
+ *
+ * @property \App\Model\Table\EebdCertificateItemsTable|\Cake\ORM\Association\HasMany $EebdCertificateItems
  *
  * @method \App\Model\Entity\EebdCertificate get($primaryKey, $options = [])
  * @method \App\Model\Entity\EebdCertificate newEntity($data = null, array $options = [])
@@ -37,6 +40,10 @@ class EebdCertificatesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+
+        $this->hasMany('EebdCertificateItems', [
+            'foreignKey' => 'eebd_certificate_id'
+        ]);
     }
 
     /**
@@ -52,20 +59,42 @@ class EebdCertificatesTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('serial_no')
-            ->requirePresence('serial_no', 'create')
-            ->notEmpty('serial_no');
-
-        $validator
-            ->dateTime('date_of_issue')
-            ->requirePresence('date_of_issue', 'create')
-            ->notEmpty('date_of_issue');
+            ->scalar('certificate_number')
+            ->allowEmpty('certificate_number');
 
         $validator
             ->scalar('vessel_name')
             ->requirePresence('vessel_name', 'create')
             ->notEmpty('vessel_name');
 
+        $validator
+            ->scalar('certificate_text')
+            ->allowEmpty('certificate_text');
+
+        $validator
+            ->date('inspection_date')
+            ->allowEmpty('inspection_date');
+
+        $validator
+            ->date('next_inspection_date')
+            ->allowEmpty('next_inspection_date');
+
+        $validator
+            ->date('next_hydro_test')
+            ->allowEmpty('next_hydro_test');
+
         return $validator;
+    }
+    
+    public function beforeMarshal(Event $event, \ArrayObject $data, \ArrayObject $options)
+    {
+        if (!empty($data['eebd_certificate_items'])) {
+            foreach ($data['eebd_certificate_items'] as &$item) {
+                if (!empty($item['status']) && is_array($item['status'])) {
+                    $item['status'] = implode(',', $item['status']);
+                }
+            }
+        }
+        return $data;
     }
 }

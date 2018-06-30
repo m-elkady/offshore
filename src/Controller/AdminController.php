@@ -16,11 +16,9 @@
 
 namespace App\Controller;
 
-use Cake\Controller\Controller;
-use Cake\Core\Configure;
+use App\Helper\CertificateHelper;
 use Cake\Event\Event;
-use App\Controller\AppController;
-use Cake\Controller\Component\AuthComponent;
+use Cake\ORM\TableRegistry;
 use Cake\Utility\Inflector;
 
 /**
@@ -73,6 +71,12 @@ class AdminController extends AppController
         $this->loadComponent('Flash');
     }
 
+    /**
+     * @param \Cake\Event\Event $event
+     *
+     * @return void
+     * @author Mohammed Elkady <m.elkady365@gmail.com>
+     */
     function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
@@ -87,10 +91,23 @@ class AdminController extends AppController
     }
 
     /**
+     * @param \Cake\Event\Event $event
+     *
+     * @author Mohammed Elkady <m.elkady365@gmail.com>
+     */
+    public function beforeRender(Event $event)
+    {
+        parent::beforeRender($event);
+        $this->__change_title();
+        $this->set('certificateStatuses', CertificateHelper::getCertificateStatuses());
+        $this->set('certificatePhases', CertificateHelper::getCertificatePhases());
+    }
+
+    /**
      * @return void
      * @author Mohammed Elkady <m.elkady365@gmail.com>
      */
-    public function doOperation(): void
+    public function doOperation()
     {
         $model           = $this->modelClass;
         $humanPluralName = Inflector::pluralize(Inflector::humanize(Inflector::underscore($model)));
@@ -105,5 +122,18 @@ class AdminController extends AppController
         }
         $this->redirect(['action' => 'index']);
     }
+
+    public function changeCertificatePhase()
+    {
+        $certificateTable   = TableRegistry::get($this->modelClass);
+        $id                 = $this->request->getData('id');
+        $certificate        = $certificateTable->get($id);
+        $certificate->phase = $this->request->getData('phase');
+        if ($certificateTable->save($certificate)) {
+            die(json_encode(['status' => 1]));
+        }
+        die(json_encode(['status' => 0]));
+    }
+
 
 }

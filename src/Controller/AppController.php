@@ -74,11 +74,6 @@ class AppController extends Controller {
         ) {
             $this->set('_serialize', true);
         }
-        $prefix = isset($this->request->params['prefix']) ? $this->request->params['prefix'] : '';
-        if (!$prefix) {
-            $this->__change_title();
-            $this->_load_buttons();
-        }
     }
 
     public function load_config() {
@@ -99,8 +94,8 @@ class AppController extends Controller {
     }
 
     function _setLanguage($lang = false) {
-        $session = $this->request->session();
-        $params = $this->request->params;
+        $session = $this->request->getSession();
+        $language = $this->request->getParam('language');
 
         $locale_languages = ['en' => 'en_US', 'ar' => 'ar_AR'];
 
@@ -115,7 +110,7 @@ class AppController extends Controller {
         }
 
 
-        I18n::locale($lang);
+        I18n::setLocale($lang);
         $this->set('locale', $lang);
 
         if ($lang == 'en_US') {
@@ -133,13 +128,6 @@ class AppController extends Controller {
         return $lang;
     }
 
-    function _load_buttons() {
-        Configure::load('buttons', 'default');
-        $params = $this->request->params;
-//        debug(Configure::read('Buttons.' . $params['controller'] . '.' . $params['action']));
-        $this->set('buttons', Configure::read('Buttons.' . $params['controller'] . '.' . $params['action']));
-    }
-
     function changeLang($lang) {
         $previous_url = $this->referer('/', true);
         if (preg_match('/\/(en|ar)\/?/', $previous_url)) {
@@ -151,15 +139,15 @@ class AppController extends Controller {
     }
 
     protected function __change_title() {
-        $params = $this->request->params;
+
         $titleArr = array();
         $titleArr[] = $this->config['site_name_' . $this->lang];
         if (!empty($this->pageTitle)) {
             $titleArr[] = $this->pageTitle;
         } else {
-            $titleArr[] = __(Inflector::humanize(Inflector::underscore($params['controller'])));
-            if ($params['action'] != 'index') {
-                $titleArr[] = __(Inflector::camelize($params['action']));
+            $titleArr[] = __(Inflector::humanize(Inflector::underscore($this->request->getParam('controller'))));
+            if ($this->request->getParam('action') != 'index') {
+                $titleArr[] = __(Inflector::camelize($this->request->getParam('action')));
             }
         }
 

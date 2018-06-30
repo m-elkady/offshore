@@ -1,7 +1,7 @@
 <?php
 
-use Cake\Utility\Inflector;
 use Cake\Routing\Router;
+use Cake\Utility\Inflector;
 
 $admin_menu = [
     'Certificates'    => [
@@ -11,8 +11,15 @@ $admin_menu = [
                 'icon' => '<i class="fa fa-fire-extinguisher" aria-hidden="true"></i>',
                 'id'   => 'FireExtinguisherCertificates',
                 'subs' => [
-                    __('List') => ['url' => ['controller' => 'fire-extinguisher-certificates', 'action' => 'index']],
-                    __('Add')  => ['url' => ['controller' => 'fire-extinguisher-certificates', 'action' => 'add']],
+                    __('List')            => ['url' => ['controller' => 'fire-extinguisher-certificates', 'action' => 'index']],
+                    __('Add')             => ['url' => ['controller' => 'fire-extinguisher-certificates', 'action' => 'add']],
+                    __('Item Types') => [
+                        'id'=>'FireExtinguisherItemTypes',
+                        'subs' => [
+                            __('List') => ['url' => ['controller' => 'fire-extinguisher-item-types', 'action' => 'index']],
+                            __('Add')   => ['url' => ['controller' => 'fire-extinguisher-item-types', 'action' => 'add']],
+                        ],
+                    ],
                 ],
             ],
             'Life Raft'            => [
@@ -110,6 +117,27 @@ $admin_menu = [
             __('Add')  => ['url' => ['controller' => 'price-lists', 'action' => 'add']],
         ],
     ],
+    'clients'         => [
+        'icon' => '<i class="fa fa-user-circle" aria-hidden="true"></i>',
+        'subs' => [
+            __('List') => ['url' => ['controller' => 'clients', 'action' => 'index']],
+            __('Add')  => ['url' => ['controller' => 'clients', 'action' => 'add']],
+        ],
+    ],
+    'Vessels'         => [
+        'icon' => '<i class="fa fa-ship" aria-hidden="true"></i>',
+        'subs' => [
+            __('List') => ['url' => ['controller' => 'vessels', 'action' => 'index']],
+            __('Add')  => ['url' => ['controller' => 'vessels', 'action' => 'add']],
+        ],
+    ],
+    'vendors'         => [
+        'icon' => '<i class="fa fa-user-circle" aria-hidden="true"></i>',
+        'subs' => [
+            __('List') => ['url' => ['controller' => 'vendors', 'action' => 'index']],
+            __('Add')  => ['url' => ['controller' => 'vendors', 'action' => 'add']],
+        ],
+    ],
     'Employees'       => [
         'icon' => '<i class="fa fa-user-circle" aria-hidden="true"></i>',
         'subs' => [
@@ -135,9 +163,18 @@ $admin_menu = [
     'Settings'        => [
         'icon' => '<i class="fa fa-cogs"></i>',
         'subs' => [
+            __('Certificate Texts') => [
+                'icon' => '<i class="fa fa-file-text"></i>',
+                'subs' => [
+                    __('List') => ['url' => ['controller' => 'certificate_texts', 'action' => 'index']],
+                    __('Add')  => ['url' => ['controller' => 'certificate_texts', 'action' => 'add']],
+                ],
+            ],
+
             __('General configuration') => ['url' => ['controller' => 'settings', 'action' => 'edit-configs', 'general']],
             __('Social network links')  => ['url' => ['controller' => 'settings', 'action' => 'edit-configs', 'social_networks']],
             __('Contact information')   => ['url' => ['controller' => 'settings', 'action' => 'edit-configs', 'contact']],
+
         ],
     ],
 ];
@@ -160,6 +197,9 @@ $admin_menu = [
         if ($('#' + $id).parents('#Certificates').length !== 0) {
             $('#Certificates > ul').show();
         }
+        if ($('#' + $id).parents('#Settings').length !== 0) {
+            $('#Settings > ul').show();
+        }
     });
 </script>
 <?php $this->end(); ?>
@@ -176,27 +216,27 @@ function side_menu($view, $menu = [])
         $class2 = (!empty($item['class'])) ? $item['class'] : '';
 //        if (hasCabalities($view, $item)) {
         ?>
-        <li id="<?php echo $id ?>">
-            <a href="<?php echo $url; ?>" <?php echo $url == '/' . $view->request->url ? 'class="active"' : ''; ?>>
-                <?php
-                if (!empty($item['icon'])) {
-                    echo $item['icon'];
-                }
-                if ($class == 'folder') {
-                    echo $view->Html->tag('span', __($key));
-                } else {
-                    echo __($key);
-                }
-                ?>
-            </a>
+      <li id="<?php echo $id ?>">
+        <a href="<?php echo $url; ?>" <?php echo $url == '/' . $view->request->url ? 'class="active"' : ''; ?>>
             <?php
+            if (!empty($item['icon'])) {
+                echo $item['icon'];
+            }
             if ($class == 'folder') {
-                echo '<ul>';
-                side_menu($view, $item['subs']);
-                echo '</ul>';
+                echo $view->Html->tag('span', __($key));
+            } else {
+                echo __($key);
             }
             ?>
-        </li>
+        </a>
+          <?php
+          if ($class == 'folder') {
+              echo '<ul>';
+              side_menu($view, $item['subs']);
+              echo '</ul>';
+          }
+          ?>
+      </li>
 
         <?php
 //        }

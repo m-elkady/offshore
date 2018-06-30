@@ -35,9 +35,12 @@ class SettingsTable extends Table {
         'contact' => [
             'title' => 'Contact information',
             'fields' => [
+                'address' => ['input' => ['type' => 'textarea', 'title' => 'Address']],
+                'zip_code' => ['input' => ['type' => 'text', 'title' => 'Zip Code']],
                 'email' => ['input' => ['type' => 'email', 'title' => 'Email']],
-                'mobile' => ['input' => ['type' => 'textarea', 'title' => 'Mobile']],
-                'telephone' => ['input' => ['type' => 'textarea', 'title' => 'Telephone']],
+                'mobile' => ['input' => ['type' => 'text', 'title' => 'Mobile']],
+                'telephone' => ['input' => ['type' => 'text', 'title' => 'Telephone']],
+                'fax' => ['input' => ['type' => 'text', 'title' => 'Fax']],
             ],
             'validator' => 'contacts',
         ],
@@ -46,6 +49,8 @@ class SettingsTable extends Table {
             'fields' => [
 //                'site_name_ar' => ['input' => ['type' => 'text', 'title' => 'Arabic Site name']],
                 'site_name_en' => ['input' => ['type' => 'text', 'title' => 'English Site name']],
+                'company_name' => ['input' => ['type' => 'text', 'title' => 'Company Name']],
+                'tax' => ['input' => ['type' => 'number', 'title' => 'VAT Tax rate']],
             ],
             'validator' => 'general',
         ]
